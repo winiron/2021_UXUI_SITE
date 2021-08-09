@@ -24,6 +24,29 @@
     
 
 
+/* 공통 : banner 영역 */
+#banner .bannerWrap img {
+    display:block;
+    margin:0 auto; margin-bottom:12px;
+}
+#banner .bannerWrap .txt {
+    color:white;text-align:center;
+}
+#banner .bannerWrap .txt h3 { font-size:18px; margin-bottom:5px;}
+#banner .bannerWrap .txt p { font-size:14px; letter-spacing:-1;}
+
+#banner .bannerWrap ul li:nth-child(1) { background-color:#7c99b9; }
+#banner .bannerWrap ul li:nth-child(2) { background-color:#4f74a1; }
+#banner .bannerWrap ul li:nth-child(3) { background-color:#4b8ce0; }
+#banner .bannerWrap ul li:nth-child(4) { background-color:#3db5f2; }
+#banner .bannerWrap ul li:nth-child(5) { background-color:#95c8ff; }
+
+#banner .bannerWrap ul li:nth-child(1) { background-color:#7c99b9; }
+#banner .bannerWrap ul li:nth-child(2) { background-color:#4f74a1; }
+#banner .bannerWrap ul li:nth-child(3) { background-color:#4b8ce0; }
+#banner .bannerWrap ul li:nth-child(4) { background-color:#3db5f2; }
+#banner .bannerWrap ul li:nth-child(5) { background-color:#95c8ff; }
+
 
 /* 모바일 버전 */
 @media screen and (max-width:699px) {
@@ -66,11 +89,27 @@
     .visualWrap img {
         position: absolute; bottom:-100px; right: -30px;
     }
+    /* banner Area */
+    #banner {
+        padding:16px;
+        background-color:white;
+    }
+    .bannerWrap p { display: none;}
 
+    #banner .bannerWrap  li {
+        float:left;
+        width:calc(100%/2); height: 196px;
+        padding:10px; padding-top: 19px;
+        text-align: center;
+    }
+    #banner .bannerWrap li:last-child {
+       display:none;
+    }
 }
 
+/* pc  버전*/
 @media screen and (min-width:700px) {
-/* header */
+    /* header */
 #header .topWrap { border-bottom:1px solid #DDDDDD; }
 #header .topWrap .top { 
     width: 980px;
@@ -166,6 +205,17 @@
 }
 #visual .visualWrap img {
     position: absolute; right: 0;
+}
+
+/* banner Area */
+.bgGray { background-color:#ccc  !important; }
+#banner .bannerWrap {
+    width: 980px; margin:0 auto; margin-bottom:30px;
+}
+#banner .bannerWrap  li {
+    float:left;
+    width:calc(100%/5); height: 196px;
+    padding:10px; padding-top: 19px;
 }
 
 }
