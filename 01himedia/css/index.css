@@ -24,7 +24,7 @@
     
 
 
-/* 공통 : banner 영역 */
+/*  banner 공통영역 */
 #banner .bannerWrap img {
     display:block;
     margin:0 auto; margin-bottom:12px;
@@ -46,6 +46,17 @@
 #banner .bannerWrap ul li:nth-child(3) { background-color:#4b8ce0; }
 #banner .bannerWrap ul li:nth-child(4) { background-color:#3db5f2; }
 #banner .bannerWrap ul li:nth-child(5) { background-color:#95c8ff; }
+
+
+/* section 공통영역 */
+#section ul li:nth-child(1) { background-image:url(../images/content_icon01.png) }
+#section ul li:nth-child(2) { background-image:url(../images/content_icon02.png) }
+#section ul li:nth-child(3) { background-image:url(../images/content_icon03.png) }
+#section ul li:last-child { margin-right:0; }
+#section ul li .txt { width:150px; }
+#section ul li .txt h3 { font-size:18px; margin-bottom:13px; }
+#section ul li .txt p { font-size:14px; margin-bottom:13px; }
+#section ul li .txt a { font-size:14px; color:#1c84ff; }
 
 
 /* 모바일 버전 */
@@ -89,7 +100,7 @@
     .visualWrap img {
         position: absolute; bottom:-100px; right: -30px;
     }
-    /* banner Area */
+    /* 모바일 banner Area */
     #banner {
         padding:16px;
         background-color:white;
@@ -105,7 +116,34 @@
     #banner .bannerWrap li:last-child {
        display:none;
     }
+    /* 모바일 : section1st Area */
+    #section1st {
+        padding: 16px;
+    }
+    #section1st ul li {
+        float: left; 
+        width: 100%;
+        margin-bottom:16px;
+    }
+    #section1st ul li:last-child { 
+        margin-bottom:0;
+    }
+    #section1st ul li .txt {
+        padding:18px 16px;
+        border: 1px solid #e5e5e5; border-top:0 none;
+    }
+    #section1st ul li .txt h3 { font-size:18px; margin-bottom:10px;}
+    #section1st ul li .txt p { font-size:14px;}
+    #section1st ul li img { 
+        background-size:cover;
+        display: block;
+        width: 100%;
+    }
+
+
 }
+
+
 
 /* pc  버전*/
 @media screen and (min-width:700px) {
@@ -217,5 +255,23 @@
     width:calc(100%/5); height: 196px;
     padding:10px; padding-top: 19px;
 }
+/* section1st Area */
+#section1st {
+    width:980px;
+    margin:0 auto; margin-bottom:30px;
+}
+#section1st ul li {
+    float: left; 
+    width: 310px;
+    margin-right:25px;
+}
+#section1st ul li:last-child { margin-right:0; }
+#section1st ul li .txt {
+    padding:18px 16px;
+    border: 1px solid #e5e5e5; border-top:0 none;
+}
+#section1st ul li .txt h3 { font-size:18px; margin-bottom:5px;}
+#section1st ul li .txt p { font-size:14px;}
+#section1st ul li img { display: block; }
 
 }
