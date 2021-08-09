@@ -1,0 +1,170 @@
+@charset "utf-8";
+
+/* 공통 버전 */
+
+/* 토글 메뉴 */
+.toggle {
+    width: 34px; height: 34px;
+    border:1px solid #aaa;
+    position: relative;
+    cursor: pointer;
+    display: none;
+  
+}
+.toggle div {
+    width: 20px; height: 3px;
+    background-color:#aaa;
+    border-radius:1.5px;
+    position: absolute; left: 50%; 
+    margin-left:-10px;
+}
+.toggle .bar1 { top:8px;}
+.toggle .bar2 { top:14px; }
+.toggle .bar3 { top:20px;}
+    
+
+
+
+/* 모바일 버전 */
+@media screen and (max-width:699px) {
+    /* header */
+    #header {  
+        height: 50px;
+        padding: 0 16px; 
+        background-color:skyblue;  
+    }
+    #header .logoWrap {
+        position: relative;
+    }
+    #header .topWrap { display:none;}
+    #header .navWrap { display:none;}
+    #header .toggle { 
+        display:block;
+        position: absolute; right:16px; top:8px;
+    }
+    #header .logoWrap h1{ 
+        position: absolute; left:16px; 
+        line-height:50px;
+    }
+
+    /* visual 부분 */
+    .visualWrap  {
+        height: 600px;
+        padding:30px; padding-top:50px;
+        background: url(../images/main_bg01.jpg) no-repeat;
+        background-size:cover;
+        position: relative;
+        overflow:hidden;
+    }
+    .visualTxt {
+        font-size:79px;
+        font-weight: bold;
+        color:white;
+        line-height:70px;
+    }
+    .visualWrap img {
+        position: absolute; bottom:-100px; right: -30px;
+    }
+
+}
+
+@media screen and (min-width:700px) {
+/* header */
+#header .topWrap { border-bottom:1px solid #DDDDDD; }
+#header .topWrap .top { 
+    width: 980px;
+    margin:0 auto;
+    /* background-color:skyblue; */
+}
+.util { float:right; }
+.util ul li { float: left; }
+.util ul li a {
+    display:block;
+    height: 26px;
+    padding:0 12px;
+    font-size:14px; color:#888888; text-align:center; line-height:26px;
+    position: relative;
+}
+.util ul li a:hover {
+    color:dimgray; font-weight:bold;
+}
+.util ul li a::after {
+    content: "";
+    width:1px; height:10px;
+    display:block;
+    background-color:#8888;
+    position:absolute; top:7px; right:0;
+}
+.util ul li:last-child a::after {
+    content:"";
+    display:none;
+}
+
+/* logoWrap */
+.logoWrap {
+    width:980px;
+    margin:0 auto;
+    /* background-color: red; */
+}
+.logoWrap h1 {
+    width:200px; 
+    margin:0 auto;
+}
+.logoWrap h1 a {
+    display:block;
+    line-height:75px; text-align: center;
+}
+
+/* navWrap */
+
+.navWrap {
+    background-color: #1d5da4;
+}
+.navWrap .gnb {
+    width: 980px;
+    margin: 0 auto;
+}
+#header .navWrap .gnb li{
+    float:left; 
+    width: calc(100%/6);
+    border-right: 1px solid #336dac;
+}
+.navWrap .gnb li:first-child {
+    border-left: 1px solid #336dac;
+}
+.navWrap .gnb li a{
+    display: block;
+    height:45px;
+    text-align: center;
+    line-height:45px;
+    color:white;
+    font-weight: bold;
+}
+.navWrap .gnb li a:hover {
+    background-color:#0a1e50;
+}
+
+/* visual Area */
+#visual {
+    height: 400px;
+    background:url(../images/main_bg01.jpg) no-repeat center;
+    overflow: hidden;
+}
+#visual .visualWrap {
+    width:980px;
+    margin:0 auto;
+    position:relative;
+}
+#visual .visualWrap .visualTxt {
+    position: absolute; top:120px;
+    font-size:79px;
+    font-weight: bold;
+    line-height:92px;
+    letter-spacing:0.085rem;
+    color:white;
+}
+#visual .visualWrap img {
+    position: absolute; right: 0;
+}
+
+}
