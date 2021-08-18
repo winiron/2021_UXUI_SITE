@@ -132,17 +132,54 @@ body {
     float: left;
     width: 25%; height: 230px;
 }
-#section2 ul li:nth-child(1) {
+#section2 ul li.vBxslider {
     width:75%; height:450px;
-    background-color:red;
+    background-color:deeppink;
 }
-#section2 ul li:nth-child(2) {
+#section2 ul li.smartApp {
     width:25%; height:450px;
     background-color:orangered;    
 }
-#section2 ul li:nth-child(3) {
-    background-color:yellow;
+
+/* HOTLINK 영역 */
+#section2 ul li.hotlink {
+    background-color:#00163b;
+    display:flex; justify-content: center; align-items: center;
 }
+#section2 ul li.hotlink .hotlinkWrap {
+    width:80%; height: 80%;
+    background-color: #6b6b6b;
+    padding:10px;
+}
+#section2 ul li.hotlink .hotlinkWrap .title {
+    font-family:'Roboto', sans-serif;
+    color:white; font-size:22px;
+
+}
+
+.hotlinkWrap ul li {
+    float: left;
+}
+.hotlinkWrap ul li:nth-child(2) {
+    padding-left:20px; padding-right:20px;
+}
+.hotlinkWrap ul li a {
+    display:block;
+}
+
+
+
+#section2 ul .hotlink .hotlinkWrap  ul li a img {
+    display: block;
+    margin-bottom:10px;
+}
+#section2 ul .hotlink .hotlinkWrap  ul li a p {
+    color:white;
+    font-size:14px;
+    text-align: center;
+}
+
+
 #section2 ul li:nth-child(4) {
     background-color:green;
 }
