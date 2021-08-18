@@ -15,9 +15,7 @@ body {
     width:1200px; height:40px;
     margin:0 auto;
 }
-#header .topMenuWrap .topMenu .leftMenu ul li { 
-    float:left;
- }
+#header .topMenuWrap .topMenu .leftMenu ul li { float:left; }
 #header .topMenuWrap .topMenu .leftMenu ul li:nth-child(2) {
     border-left:1px solid #0044af; border-right:1px solid #0044af;
 }
@@ -53,7 +51,6 @@ body {
     display: block;
     color:white; font-size:12px;
 }
-
 #header .gnbWrap {
     width:100%; height: 116px;
     background-color:white;
@@ -70,13 +67,8 @@ body {
     display:block;
     width:220px; height:116px;
 }
-
-#header .gnbWrap .gnb .menu {
-    float:right;
-}
-#header .gnbWrap .gnb .menu ul li {
-    float:left;    
-}
+#header .gnbWrap .gnb .menu { float:right; }
+#header .gnbWrap .gnb .menu ul li { float:left; }
 #header .gnbWrap .gnb .menu ul li a {
     display:block;
     height:116px;
@@ -84,10 +76,7 @@ body {
     font-size:20px; color:#595959; font-weight:500;
     display:flex; justify-content:center; align-items:center;
 }
-#header .gnbWrap .gnb .menu ul li:hover a {
-    color:black;
-}
-
+#header .gnbWrap .gnb .menu ul li:hover a { color:black; }
 
 /* section1 영역 */
 .section1 {
@@ -124,6 +113,7 @@ body {
     text-align:center;
 }
 
+/* section2 영역 */
 #section2 {
     width:1200px;
     margin:0 auto; margin-bottom:20px;
@@ -132,86 +122,95 @@ body {
     float: left;
     width: 25%; height: 230px;
 }
+/* vBxslider 영역 */
 #section2 ul li.vBxslider {
     width:75%; height:450px;
     background-color:deeppink;
 }
+/* smartApp 영역 */
 #section2 ul li.smartApp {
     width:25%; height:450px;
     background-color:orangered;    
 }
-
 /* HOTLINK 영역 */
 #section2 ul .hotlink {
     background-color:#00163b;
     padding:30px;
 }
-#section2 ul .hotlink .hotlinkWrap {
-    width:220px;
-}
 #section2 ul .hotlink .hotlinkWrap .title {
     font-family:'Roboto', sans-serif;
     color:white; font-size:22px;
-    margin-bottom:38px;
+    margin-bottom:36px;
 }
-.hotlinkWrap ul {
-    display:flex;
-    justify-content: space-between;
+#section2 ul .hotlink .hotlinkWrap .hotlinkIcon {
+    width:220px; height:100%;
+    background-color:darkgoldenrod;
     margin:0 auto;
 }
-.hotlinkWrap ul li {
-    float: left;
-    margin-left:20px;
+#section2 ul .hotlink .hotlinkWrap .hotlinkIcon .hotlinkIconWrap {
+    float:left;
+    margin-left: 20px;
 }
-.hotlinkWrap ul li:first-child {
-    margin-left:0;
+#section2 ul .hotlink .hotlinkWrap .hotlinkIcon .hotlinkIconWrap:first-child { margin-left:0; }
+
+#section2 ul .hotlink .hotlinkWrap .hotlinkIcon .hotlinkIconWrap a {
+    display: block;
+    width:60px; height:60px;
+    background-repeat:no-repeat;
+    margin-bottom:10px;
+    cursor: pointer;
 }
-
-.hotlinkWrap ul li a {
-    display:block;
-    width:60px; height:104px;
+#section2 ul .hotlink .hotlinkWrap .hotlinkIcon .hotlinkIconWrap:nth-child(1) a {
+    background-image:url(../images/section02_03_60_60_icon_01.png);
 }
-
-#section2 ul .hotlink .hotlinkWrap  ul li a p {
-    color:white;
-    font-size:14px;
-    text-align: center;
+#section2 ul .hotlink .hotlinkWrap .hotlinkIcon .hotlinkIconWrap:nth-child(2) a {
+    background-image:url(../images/section02_03_60_60_icon_02.png);
 }
-
-
-#section2 ul li:nth-child(4) {
+#section2 ul .hotlink .hotlinkWrap .hotlinkIcon .hotlinkIconWrap:nth-child(3) a {
+    background-image:url(../images/section02_03_60_60_icon_03.png);
+}
+#section2 ul .hotlink .hotlinkWrap .hotlinkIcon .hotlinkIconWrap p {
+    width:60px;
+    color:white; font-size:14px;
+    text-align:center;
+}
+/* 공지사항 영역 */
+#section2 ul .notice {
     background-color:green;
 }
-#section2 ul li:nth-child(5) {
+/* NEWS 영역 */
+#section2 ul .news {
     background-color:blue;
 }
-#section2 ul li:nth-child(6) {
+/* TOUR 영역 */
+#section2 ul .tour {
     background-color:#00163B;
 }
-#section2 ul li:nth-child(7) {
+/* MOVIE 영역 */
+#section2 ul .movie {
     width: 25%;
     background-color:purple;
 }
-#section2 ul li:nth-child(8) {
+/* rBxslider 영역 */
+#section2 ul .rBxslider {
     width:75%;
     background-color:skyblue;
 }
 
-/* notice 영역 */
-#notice {
+/* nBxSlider 영역 */
+#nBxSlider {
     width:1200px; height:60px;
     background-color:white; 
     margin:0 auto; margin-bottom:70px;
 }
-#notice div { float:left; }
-#notice .cal {
+#nBxSlider div { float:left; }
+#nBxSlider .cal {
     width:300px; height: 60px;
     border-right:2px solid lightgrey;
 }
-#notice .info {
+#nBxSlider .info {
     width: 900px; height: 60px;
 }
-
 
 /* footer 영역 */
 #footer {
