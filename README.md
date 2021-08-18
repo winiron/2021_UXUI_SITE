@@ -1,3 +1,3 @@
 # 2021_UXUI_SITE
 1.himedia https://winiron.github.io/2021_UXUI_SITE/01himedia
-1.collage https://winiron.github.io/2021_UXUI_SITE/02collage
+1.collage https://winiron.github.io/2021_UXUI_SITE/02college
