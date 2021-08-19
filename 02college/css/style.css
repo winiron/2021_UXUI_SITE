@@ -83,37 +83,31 @@ body {
     width:1200px; height:260px;
     margin:0 auto;
 }
-
-.section1 .title {
+.section1 .leftSentenceWrap {
     float:left;
     padding-top:80px; padding-bottom:50px;
 }
-.section1 .icon {
+.section1 .rightIconWrap {
     float:right;
     height:260px;
     padding-top:120px;
 }
-
-.section1 .icon ul li {
+.section1 .rightIconWrap ul li {
     float:left;
     padding-left:20px;
 }
-
-.section1 .icon ul li a {
+.section1 .rightIconWrap ul li a {
     display:block;
 }
-.section1 .icon ul li a img {
+.section1 .rightIconWrap ul li a img {
     display: block;
     margin-bottom:10px;
 }
-.section1 .icon ul li a p {
-    color:white;
-    font-size:14px;
-    font-weight: 300;
-    text-align:center;
+.section1 .rightIconWrap ul li a p {
+    text-shadow: 1px 1px 1px gray;
 }
 
-/* section2 영역 */
+/* section2 영역 START */
 #section2 {
     width:1200px;
     margin:0 auto; margin-bottom:20px;
@@ -122,60 +116,56 @@ body {
     float: left;
     width: 25%; height: 230px;
 }
-/* vBxslider 영역 */
+/* vBxslider 영역 START */
 #section2 ul li.vBxslider {
     width:75%; height:450px;
     background-color:deeppink;
 }
-/* smartApp 영역 */
+/* smartApp 영역 START */
 #section2 ul li.smartApp {
     width:25%; height:450px;
     background-color:orangered;    
 }
-/* HOTLINK 영역 */
-#section2 ul .hotlink {
+/* HOTLINK 영역 START */
+#section2 ul li.hotlink {
     background-color:#00163b;
     padding:30px;
 }
-#section2 ul .hotlink .hotlinkWrap .title {
+#section2 ul li.hotlink .hotlinkWrap .title {
     font-family:'Roboto', sans-serif;
     color:white; font-size:22px;
-    margin-bottom:36px;
+    margin-bottom:28px;
 }
-#section2 ul .hotlink .hotlinkWrap .hotlinkIcon {
+#section2 ul li.hotlink .hotlinkWrap .hotlinkIcon {
     width:220px; height:100%;
     background-color:darkgoldenrod;
     margin:0 auto;
 }
-#section2 ul .hotlink .hotlinkWrap .hotlinkIcon .hotlinkIconWrap {
+#section2 ul li.hotlink .hotlinkWrap .hotlinkIcon .hotlinkIconWrap {
     float:left;
     margin-left: 20px;
 }
-#section2 ul .hotlink .hotlinkWrap .hotlinkIcon .hotlinkIconWrap:first-child { margin-left:0; }
+#section2 ul li.hotlink .hotlinkWrap .hotlinkIcon .hotlinkIconWrap:first-child { margin-left:0; }
 
-#section2 ul .hotlink .hotlinkWrap .hotlinkIcon .hotlinkIconWrap a {
+#section2 ul li.hotlink .hotlinkWrap .hotlinkIcon .hotlinkIconWrap a {
     display: block;
     width:60px; height:60px;
     background-repeat:no-repeat;
     margin-bottom:10px;
     cursor: pointer;
 }
-#section2 ul .hotlink .hotlinkWrap .hotlinkIcon .hotlinkIconWrap:nth-child(1) a {
+#section2 ul li.hotlink .hotlinkWrap .hotlinkIcon .hotlinkIconWrap:nth-child(1) a {
     background-image:url(../images/section02_03_60_60_icon_01.png);
 }
-#section2 ul .hotlink .hotlinkWrap .hotlinkIcon .hotlinkIconWrap:nth-child(2) a {
+#section2 ul li.hotlink .hotlinkWrap .hotlinkIcon .hotlinkIconWrap:nth-child(2) a {
     background-image:url(../images/section02_03_60_60_icon_02.png);
 }
-#section2 ul .hotlink .hotlinkWrap .hotlinkIcon .hotlinkIconWrap:nth-child(3) a {
+#section2 ul li.hotlink .hotlinkWrap .hotlinkIcon .hotlinkIconWrap:nth-child(3) a {
     background-image:url(../images/section02_03_60_60_icon_03.png);
 }
-#section2 ul .hotlink .hotlinkWrap .hotlinkIcon .hotlinkIconWrap p {
-    width:60px;
-    color:white; font-size:14px;
-    text-align:center;
-}
-/* 공지사항 영역 */
-#section2 ul .notice {
+#section2 ul li.hotlink .hotlinkWrap .hotlinkIcon .hotlinkIconWrap p { width:60px; }
+/* 공지사항 영역 START */
+#section2 ul li.notice {
     background-color:green;
 }
 /* NEWS 영역 */
