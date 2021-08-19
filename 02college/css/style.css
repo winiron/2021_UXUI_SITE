@@ -126,7 +126,8 @@ body {
 #section2 ul li.vBxslider {
     width:75%; height:450px;
     /* background-color:deeppink; */
-    position: relative;overflow: hidden;
+    /* position: relative; */
+    overflow: hidden;
 }
 #section2 ul li.vBxslider .vBxsliderWRap div { width:900px; height: 450px; }
 #section2 ul li.vBxslider .vBxsliderWRap .slideImg_01 { background-image:url(../images/section02_01_900_450_01.jpg); }
