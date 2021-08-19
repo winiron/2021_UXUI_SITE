@@ -3,6 +3,7 @@
 body {
     background-image: url(../images/full_background.jpg);
     background-repeat: no-repeat;
+    background-size:cover;
 }
 
 /* header 영역 */
