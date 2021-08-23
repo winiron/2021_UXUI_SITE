@@ -354,10 +354,49 @@ body {
 }
 
 /* rBxslider 영역 */
+
+
 #section2 ul .rBxslider {
-    width:75%;
-    background-color:skyblue;
+    width:75%; 
 }
+
+.rBxsliderWrap .content01 {
+    height:225px;
+    background:url(../images/section02_08_900_225_01.jpg) no-repeat center;
+}
+.rBxsliderWrap .content02 {
+    height:225px;
+    background:url(../images/section02_08_900_225_02.jpg) no-repeat center;
+}
+.rBxsliderWrap .content01 .contentWrap {
+    position: absolute; left: 60px; top: 20px;
+}
+
+.rBxsliderWrap .content01 .contentWrap .txtwrap .subTitle {
+    color:#ff4e3e;
+}
+.rBxsliderWrap .content01 .contentWrap .txtwrap .mainTitle {
+    display: block;
+    padding:0px;
+    line-height:60px;
+    margin-bottom:30px;
+    color:#ff4e3e;
+}
+.rBxsliderWrap .content01 .contentWrap a {
+    border:1px solid white;
+    background-color: rgba(251, 20, 2, 0.8);
+    padding:10px 20px;
+    color:white;
+    box-shadow: 1px 2px lightgrey;
+}
+.rBxsliderWrap .content01 .contentWrap a span {
+    padding-left:10px;
+}
+
+
+
+
+
 
 /* nBxSlider 영역 */
 #nBxSlider {
