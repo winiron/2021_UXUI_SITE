@@ -252,8 +252,63 @@ body {
 
 /* NEWS 영역 */
 #section2 ul .news {
-    background-color:blue;
+    width: 300px; height: 225px;
+    padding-left:20px; padding-right:20px;
+    padding-top:30px;
+    background-color: white;
 }
+#section2 ul .news .newsWrap {
+    position:relative;
+}
+#section2 ul .news .newsWrap .title { color:#01183a; }
+#section2 ul .news .newsWrap .contents { margin-bottom: 20px; }
+#section2 ul .news .newsWrap .contents .img {
+    float:left;
+    width:116px; height:80px;
+    background:url(../images/snsImg.jpg) no-repeat center;
+}
+#section2 ul .news .newsWrap .contents .txt {
+    display: block;
+    float:right;
+    width:130px; height:80px;
+    color:#4c4c4c;
+    font-size:14px;
+    line-height:20px;
+    white-space:normal;
+    display:-webkit-box;
+    -webkit-line-clamp:4;
+    -webkit-box-orient:vertical;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+#section2 ul .news .newsWrap .contents .txt:hover {
+    color:#01183a; 
+}
+#section2 ul .news .newsWrap .sns {
+    position: absolute; right:0;
+}
+#section2 ul .news .newsWrap .sns div {
+    float: left; 
+    margin-left:4px;
+}
+#section2 ul .news .newsWrap .sns div a {
+    display: block;
+    width: 30px; height:30px; 
+}
+#section2 ul .news .newsWrap .sns div:nth-child(1) a {
+    background:url(../images/section02_05_icon_01.jpg) no-repeat center;
+}
+#section2 ul .news .newsWrap .sns div:nth-child(2) a {
+    background:url(../images/section02_05_icon_02.jpg) no-repeat center;
+}
+#section2 ul .news .newsWrap .sns div:nth-child(3) a {
+    background:url(../images/section02_05_icon_03.jpg) no-repeat center;
+}
+#section2 ul .news .newsWrap .sns div:nth-child(4) a {
+    background:url(../images/section02_05_icon_04.jpg) no-repeat center;
+}
+
+
 /* TOUR 영역 */
 #section2 ul .tour {
     background-color:#00163B;
