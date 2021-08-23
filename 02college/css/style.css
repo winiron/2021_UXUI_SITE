@@ -344,8 +344,15 @@ body {
 /* MOVIE 영역 */
 #section2 ul .movie {
     width:25%;
-    background-color:purple;
+    background:url(../images/section02_07_300_225_bg.jpg);
+    display:flex; justify-content: center; align-items: center;
 }
+#section2 ul .movie a {
+    display:block;
+    width: 62px; height: 62px;
+    background:url(../images/section02_07_62_62_w.png) no-repeat center;
+}
+
 /* rBxslider 영역 */
 #section2 ul .rBxslider {
     width:75%;
