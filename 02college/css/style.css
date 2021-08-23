@@ -215,25 +215,38 @@ body {
 }
 #section2 ul li.hotlink .hotlinkWrap .hotlinkIcon .hotlinkIconWrap p { width:60px; }
 
-/* 공지사항 영역 START */
+/* notice 영역 START */
 #section2 ul li.notice {
     background-image:url(../images/section02_04_300_225_bg.jpg);
     padding:30px;
 }
-
-#section2 ul li.notice .noticeTitle {
-    font-family:'Roboto', sans-serif;
-    color:white; font-size:20px;
-    font-weight:bold;
-    margin-bottom:20px;
+#section2 ul li.notice .noticeWrap .title { color:white; }
+#section2 ul li.notice .noticeWrap .txtWrap a {
+    display:block;
+    color:white; font-size:12px; line-height:22px;
 }
-#section2 ul li.notice hr {
-    margin-bottom:12px;
+#section2 ul li.notice .noticeWrap .txtWrap a:hover { color:skyblue; }
+#section2 ul li.notice .noticeWrap .txtWrap a span {
+    display:inline-block;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
 }
-#section2 ul li.notice .noticeContent {
-    width:200px;
-    background-color: #6b6b6b;
-    color:white; font-size:14px;
+#section2 ul li.notice .noticeWrap .txtWrap .subject { 
+    width:65%;
+}
+#section2 ul li.notice .noticeWrap .txtWrap .subject::before { 
+    content:'';
+    display:inline-block;
+    width:2px;
+    height:2px;
+    margin:-5px 10px 0 0;
+    vertical-align:middle;
+    background:white;
+    border-radius:50%
+}
+#section2 ul li.notice .noticeWrap .txtWrap .date { 
+    width:35%; text-align:right;
 }
 
 
