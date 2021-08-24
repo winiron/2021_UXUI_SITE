@@ -247,23 +247,24 @@
                     <li class="rBxslider">
                         <div class="rBxsliderWrap">
                             <div class="content01">
-                                <div class="contentWrap">
-                                    <div class="txtwrap">
-                                        <p class="subTitle notoSanse_32_300">2017년 신·편입생 2차 모집</p>
-                                        <p class="mainTitle notoSanse_60_bold">2017.7.1 ~ 7.10</p>
+                                <div class="content">
+                                    <div class="txt">
+                                        <p class="notoSanse36">2017년 신·편입생 2차 모집</p>
+                                        <p class="notoSanse55B">2017.7.1 ~ 7.10</p>
                                     </div>
                                     <a href="#" class="btn">입학사전예약<span>▶</span></a>
                                 </div>
                             </div>
                             <div class="content02">
-                                <div class="contentWrap">
-                                    <div class="txtwrap">
-                                        <p class="subTitle notoSanse_32_300">2017년 신·편입생 2차 모집</p>
-                                        <p class="mainTitle notoSanse_60_bold">2017.7.1 ~ 7.10</p>
+                                <div class="content">
+                                    <div class="txt">
+                                        <p class="notoSanse36">2017년 신·편입생 2차 모집</p>
+                                        <p class="notoSanse55B">2017.7.1 ~ 7.10</p>
                                     </div>
                                     <a href="#" class="btn">입학사전예약<span>▶</span></a>
                                 </div>                                
                             </div>
+                        </div>
                     </li>
                     <!-- rBxslider end -->
                 </ul>
@@ -272,9 +273,34 @@
 
 <!-- NOTICE START -->
             <div id="nBxSlider" class="clearfix">
-                <div class ="cal"></div>
-                <div class ="info">
+                <div class ="cal clearfix">
+                    <div class="title notoSanse20B">학사일정</div>
+                    <div class="date notoSanse20"><span class="prevBtn"></span>2016 07<span class="nextBtn"></span></div>
                 </div>
+                <div class="slide">
+                    <div class ="slideWrap">
+                        <div class="slide_01">
+                            <a href="#">
+                                <span class="subject">2016-1학기 성적 열람 및 상담 신청</span>
+                                <span class="sentence">성적 열람 및 상담 신청은 본인이 수강한 교과목 설문조사를 모두 마친 후에 확인이... </span>
+                            </a>
+                        </div>
+                        <div class="slide_02">
+                            <a href="#">
+                                <span class="subject">2016-2학기 성적 열람 및 상담 신청</span>
+                                <span class="sentence">성적 열람 및 상담 신청은 본인이 수강한 교과목 설문조사를 모두 마친 후에 확인이... </span>
+                            </a>
+                        </div>
+                        <div class="slide_03">
+                            <a href="#">
+                                <span class="subject">2017-1학기 성적 열람 및 상담 신청</span>
+                                <span class="sentence">성적 열람 및 상담 신청은 본인이 수강한 교과목 설문조사를 모두 마친 후에 확인이... </span>
+                            </a>
+                        </div>
+                    </div>
+                 
+                </div>
+
             </div>
 <!-- NOTICE END -->
 
@@ -311,12 +337,16 @@
 
 
 <!-- JavaScript 영역 -->
-        <script>
-            $(document).ready(function(){
-                $(".vBxsliderWRap").bxSlider();
-                $(".rBxsliderWrap").bxSlider();
-            })
-        </script>
+<script>
+    $(document).ready(function(){
+        $(".vBxsliderWRap").bxSlider();
+        $(".rBxsliderWrap").bxSlider();
+        $(".slideWrap").bxSlider({
+            pager: false,
+            mode: 'vertical'
+        });
+    })
+</script>
 
     </body>
 </html>
