@@ -454,6 +454,8 @@ body {
     display: inline-block;
     width:300px;
     text-align:center;
+    font-size:15px;
+    font-weight:bold;
 }
 #nBxSlider .slide .slideWrap div a .sentence {
     display: inline-block;
@@ -485,9 +487,12 @@ body {
     width:1200px; height:165px;
     margin:0 auto; 
 }
-#footer .footerWrap .logo { 
-    width:300px; height:165px;
+#footer .footerWrap .logo {
     float:left;
+}
+#footer .footerWrap .logo a {
+    display: block; 
+    width:300px; height:165px;
     background: url(../images/logo.png) no-repeat center;
 }
 #footer .footerWrap .content { 
