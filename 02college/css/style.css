@@ -366,14 +366,18 @@ body {
     background: url(../images/section02_08_900_225_02.jpg) no-repeat center;
 }
 #section2 ul .rBxslider .rBxsliderWrap .content01 .content {
-    position: absolute; left:100px; top:30px;
+    position: absolute; left:100px; top:10px;
 }
 #section2 ul .rBxslider .rBxsliderWrap .content02 .content {
-    position: absolute; right:100px; top:30px;
+    position: absolute; right:100px; top:10px;
 }
 #section2 ul .rBxslider .rBxsliderWrap div .content .txt {
     margin-bottom:30px;
 }
+#section2 ul .rBxslider div.bx-pager.bx-default-pager {
+    padding-top: 0px;
+}
+
 #section2 ul .rBxslider .rBxsliderWrap div .content .txt p:nth-child(1) {
     color:#ff503d;
 }
@@ -395,7 +399,6 @@ body {
 #section2 ul .rBxslider .rBxsliderWrap .content02 .content .btn {
     margin-left:220px;
 }
-
 
 /* notcie 영역 */
 #nBxSlider {
