@@ -9,10 +9,12 @@
             <link rel="stylesheet" href="css/jquery.bxslider.css">
             <link rel="stylesheet" href="css/common.css">
             <link rel="stylesheet" href="css/font.css">
+            <link rel="stylesheet" href="css/colorbox.css">
             <link rel="stylesheet" href="css/style.css">
 
             <script src="js/jquery-3.1.1.min.js"></script>
             <script src="js/jquery.bxslider.js"></script>
+            <script src="js/jquery.colorbox-min.js"></script>
 
         </head>
     <body>
@@ -240,7 +242,7 @@
                     <!-- tour end -->
                     <!-- movie start -->
                     <li class="movie">
-                        <a href=""></a>
+                        <a href="https://www.youtube.com/embed/K-rLSihgeUM"  class="youtube"></a>
                     </li>
                     <!-- movie end -->
                     <!-- rBxslider start -->
@@ -345,6 +347,11 @@
             pager: false,
             mode: 'vertical'
         });
+        $(".youtube").colorbox({
+                iframe:true,
+                innerWidth:700,
+                innerHeight:394
+        })
     })
 </script>
 
