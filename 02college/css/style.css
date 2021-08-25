@@ -428,9 +428,7 @@ body {
     background:url(../images/next_arrow.jpg) no-repeat center;
     margin-left:10px;
 }
-
-
-
+/* notice bxSlider start */
 #nBxSlider .slide {
     width: 900px; height: 60px;
 }
@@ -463,7 +461,17 @@ body {
     font-size:14px;
     overflow: hidden;
 }
+/*notice bxSlider Controls 변경 작업*/
 
+#nBxSlider .bx-wrapper .bx-prev {
+    left:870px; top:14px;
+    background: url('../images/toTopBtn.jpg') no-repeat center;
+
+  }
+#nBxSlider  .bx-wrapper .bx-next {
+    left:870px; top:46px;
+    background: url('../images/toBottomBtn.jpg') no-repeat 0 0;
+}
 
 
 
