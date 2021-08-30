@@ -127,40 +127,122 @@ input[type="text"]:focus { outline:none; }
 
 /* section>container1 영역 */
 #section .container1 {
-    width:100%; height: 540px;
-    margin-bottom:16px;
+    width:100%; height:556px;
+    margin-bottom: 16px;
    
 }
-
-
 /* section>container1>left 영역 */
-.container1 .left {
-    width: 482px; height: 556px;
+.container1 .container1Wrap {
+    width:482px; height:556px;
     margin-right:16px;
     float: left;
     position: relative;
 } 
 /* section>container1>left>예약 영역 */
 
-.container1 .left .reservation {
-    width: 100%; height:300px;
-    margin-bottom:16px;
+.container1 .container1Wrap .reservation {
+    width:100%; height:300px;
 }
-
-.reservation .list1 { background-color:white; }
-.reservation .list2 {  background-color:white; }
-.reservation .list3 { background-color:white; }
-.reservation .list4 { background-color:white; }
-
-.reservation .list1 .content { background-color: #14252d; }
-.reservation .list2 .content { background-color:skyblue; }
-.reservation .list3 .content { background-color:pink; }
-.reservation .list4 .content { background-color:orange; }
-
 .reservation  div .content {
-    width: 350px; height: 300px;
-    margin-left:146px;
+    width: 346px; height:300px;
+    margin-left:130px;
+    padding:10px 35px;
 }
+
+.blind { 
+    display: block;
+    position: absolute;left: 0;top: -999px;
+}
+.form { width:346px; }
+.form fieldset { 
+    border: 0; 
+    margin-bottom:30px;
+}
+.form fieldset ul .selWrap label { 
+    display: block;
+    padding:5px 0; 
+    font-size:0.9rem;
+}
+.form fieldset ul li {
+    width: 286px;
+    margin-bottom:14px;
+}
+.form fieldset ul .selWrap select{
+    width: 282px;height:30px;
+    border-radius:5px;text-indent:10px;
+   color:#141414; font-size:0.9rem;
+}
+
+.form fieldset ul .dayWrap .left {
+    float:left;
+    width:130px;
+    margin-right:10px;
+}
+.form fieldset ul .dayWrap .right {
+    float:left;
+    width:130px;
+}
+.form fieldset ul .dayWrap .right label,
+.form fieldset ul .dayWrap .left label{
+    color:#141414; font-size:0.9rem;
+    margin-bottom:10px;
+}
+.form fieldset ul .dayWrap .left input {
+    width:134px; height:30px;
+    color:#141414; font-size:0.9rem; text-indent:10px;
+    border-radius:5px;
+}
+
+.form fieldset ul .dayWrap .right input {
+    width:134px; height:30px;
+    color:#141414; font-size:0.9rem; text-indent:10px;
+    border-radius:5px;
+}
+.form fieldset ul .gradeWrap > .left {
+    float:left;
+    width:188px; height:30px;
+    margin-right:10px;
+}
+.form fieldset ul .gradeWrap .left label,
+.form fieldset ul .gradeWrap .right label {
+    color:#141414; font-size:0.9rem;
+}
+.form fieldset ul .gradeWrap .left select {
+    width:188px; height: 30px;
+    border-radius: 5px;
+    color:#141414; font-size:0.9rem; text-indent:10px;
+}
+.form fieldset ul .gradeWrap .right {
+    float:left;
+    width:80px; height: 30px;
+}
+.form fieldset ul .gradeWrap > .right > input {
+    float:left;
+    width:80px; height: 30px;
+    color:#141414; font-size:0.9rem; text-indent:10px;
+    border-radius: 5px;
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+    /* color: rgba(0, 0, 0, 0);
+    opacity: 1;
+    display: block; */
+    background: url(../img/search.jpg) no-repeat;
+    width: 20px;
+    height: 20px;
+    cursor:pointer
+    /* border-width: thin;
+    filter: invert(0.9); */
+}
+
+.reservationBtn {
+    width: 284px; height: 40px;
+    border-radius:16px;
+    background-color: #ff7510;
+    border:0;
+    font-size:1rem; font-weight:600;
+    cursor: pointer;
+}
+
 .rMenu {
     width: 130px; height: 300px;
     position: absolute; left: 0; top: 0;
@@ -201,8 +283,6 @@ background:url(../img/alirplane_icon_off.png) no-repeat center;
     background:url(../img/vacation_icon_off.png) no-repeat center;
 }
 
-
-
 .rMenu .bx-wrapper .bx-pager.bx-default-pager a {
     background-color:#fff;
     color:black;  
@@ -226,22 +306,49 @@ background:url(../img/alirplane_icon_off.png) no-repeat center;
 }
 
 /* section>container1>left>배스트 상품 영역 */
-.container1 .left .bestProduct {
+.container1 .container1Wrap .bestProduct {
+    padding-top:16px;
     width: 100%; height: 240px;
-    margin-bottom:16px;
 }
-.container1 .left .bestProduct ul li{
+.container1 .container1Wrap .bestProduct ul li {
     float:left;
     width:233px; height: 240px;
     margin-right:16px;
     background-color:darkmagenta;
 }
-.container1 .left .bestProduct ul li:last-child{
+.container1 .container1Wrap .bestProduct ul li:nth-child(2) {
     margin-right:0px;
 }
+.container1 .container1Wrap .bestProduct ul li a {
+    display:block;
+    width:233px; height: 240px;
+    position: relative;
+}
+.container1 .container1Wrap .bestProduct ul li:nth-child(1) a { 
+    background:url(../img/france.png) no-repeat center;
+    background-size: cover;
+}
+.container1 .container1Wrap .bestProduct ul li:nth-child(2) a { 
+    background:url(../img/japan.png) no-repeat center;
+    background-size: cover;
+}
+.container1 .container1Wrap .bestProduct ul li a .product {
+    width:233px; height: 50px;
+    background-color: #141414;
+    position: absolute; left: 0; bottom: 0;
+    color:white; text-align: center; line-height:50px;
+}
+.container1 .container1Wrap .bestProduct ul li a .product span {
+    color:#4cb922;
+    padding-left:16px; padding-right:16px;
+}
+
+
+
+
 /* section>container1>배너 영역 */
 .container1 .banner {
-    width: 482px; height: 540px;
+    width: 482px; height: 556px;
     /* background-color: crimson; */
     float: left;
 }
@@ -254,7 +361,7 @@ background:url(../img/alirplane_icon_off.png) no-repeat center;
 }
 #section .container2 ul li {
     float:left;
-    width:233px; height:240px; 
+    width:233px; height: 240px;
     margin-right:16px;
     background-color: chocolate;
 }
@@ -263,11 +370,11 @@ background:url(../img/alirplane_icon_off.png) no-repeat center;
 }
 /* section>container3 영역 */
 #section .container3 {
-    width:100%; height:240px;
+    width:100%; height: 240px;
 }
 #section .container3 ul li {
     float:left;
-    width:233px; height:240px; 
+    width:233px; height: 240px;
     margin-right:16px;
     background-color:orange;
 }
