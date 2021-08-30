@@ -22,11 +22,38 @@
     display:block;
     background: url(../img/logo.png) no-repeat center;
 }
+
 .topWrap .top .search {
     width:290px; height:30px;
-    background-color:white;
-    border-radius:30px;
+    position: relative;
 }
+input[type="text"]:focus { outline:none; }
+.searchInp {
+    width:290px; height:30px;
+    background: #fff;
+    border-radius:30px;
+    font-size:12px;
+    text-indent:90px;
+    /* box-shadow: 5px 5px 0 #000, -5px -5px 0 #f00; */
+    border:0 none;
+}
+.searchTitle {
+    display: block;
+    position: absolute; top: 50%; left:10px;
+    transform: translateY(-50%);
+    width: 60px; height: 20px;
+    background:url(../img/searchtext.jpg);
+    text-indent:-9999px;
+}
+.searchBtn {
+    position: absolute; right: 10px; top: 50%;
+    transform: translateY(-50%);
+    width: 20px; height: 20px;
+    background: url(../img/search.jpg) no-repeat center;
+    text-indent:-9999px;
+    border:0 none;
+}
+
 .topWrap .top .snsMenu {
     width:344px; height:24px;
     display: flex;
@@ -64,33 +91,140 @@
  }
  .gnbWrap .gnb {
     width:980px; height:65px;
-    background-color:#e2e5e7;
     margin:0 auto;
     border-bottom:5px solid #0e73a7;  
+    display: flex; justify-content: space-between;
  }
+.gnbWrap .gnb li {
+    width:calc( 100% / 6 );
+}
+.gnbWrap .gnb li a {
+    display:block;
+    width: 100%; height: 100%;
+    display: flex; justify-content: center; align-items: center;
+    font-size:18px; color:#14252d;
+    border-left:1px solid #e6e6e6; border-right:1px solid #e6e6e6;
+}
+.gnbWrap .gnb li a:hover {
+    background-color:#0e73a7 ;
+    color:white;
+    border:0 none;
+}
+
+
 
 /* section 영역 */
 #section {
     width:980px;
-    margin:0 auto;   
+    margin:0 auto;  
+    position: relative; 
 }
+#section img {
+    display: block;
+    width: 750px; height: 533px;
+    position: absolute; left: 30%; top: 10%;
+}
+
 /* section>container1 영역 */
 #section .container1 {
-    width:100%; height: 556px;
+    width:100%; height: 540px;
     margin-bottom:16px;
+   
 }
+
+
 /* section>container1>left 영역 */
 .container1 .left {
     width: 482px; height: 556px;
     margin-right:16px;
     float: left;
+    position: relative;
 } 
 /* section>container1>left>예약 영역 */
+
 .container1 .left .reservation {
-    width: 100%; height: 300px;
-    background-color: darkgreen;
+    width: 100%; height:300px;
     margin-bottom:16px;
 }
+
+.reservation .list1 { background-color:white; }
+.reservation .list2 {  background-color:white; }
+.reservation .list3 { background-color:white; }
+.reservation .list4 { background-color:white; }
+
+.reservation .list1 .content { background-color: #14252d; }
+.reservation .list2 .content { background-color:skyblue; }
+.reservation .list3 .content { background-color:pink; }
+.reservation .list4 .content { background-color:orange; }
+
+.reservation  div .content {
+    width: 350px; height: 300px;
+    margin-left:146px;
+}
+.rMenu {
+    width: 130px; height: 300px;
+    position: absolute; left: 0; top: 0;
+    border:0 none;
+}
+
+.rMenu li a {
+    display: block;
+    width:130px; height:75px;
+    background-color:#0099cb;
+    color:white;
+    padding-left:10px;
+    line-height:75px;
+    border-bottom:1px solid #0087bf;
+}
+.rMenu li:last-child a {
+    border:0 none;
+}
+.rMenu .iconTxt {
+    display: flex;
+    align-items: center;
+}
+.rMenu li a span {
+    display:inline-block;
+    width: 34px; height: 34px;
+    margin-right:10px;
+}
+.rMenu li:nth-child(1) a span {
+background:url(../img/alirplane_icon_off.png) no-repeat center;
+}
+.rMenu li:nth-child(2) a span {
+    background:url(../img/hotel_icon_off.png) no-repeat center;
+    }
+.rMenu li:nth-child(3) a span {
+    background:url(../img/rentCar_icon_off.png) no-repeat center;
+}
+.rMenu li:nth-child(4) a span {
+    background:url(../img/vacation_icon_off.png) no-repeat center;
+}
+
+
+
+.rMenu .bx-wrapper .bx-pager.bx-default-pager a {
+    background-color:#fff;
+    color:black;  
+}
+/* 엑티브상태에 대한 속성값 지정 */
+.rMenu li a.active { 
+    background-color:#fff;
+    color:black;    
+}
+.rMenu li:nth-child(1) a.active  span {
+    background:url(../img/alirplane_icon_on.png) no-repeat center;
+}
+.rMenu li:nth-child(2) a.active  span {
+    background:url(../img/hotel_icon_on.png) no-repeat center;
+}
+.rMenu li:nth-child(3) a.active  span {
+    background:url(../img/rentCar_icon_on.png) no-repeat center;
+}
+.rMenu li:nth-child(4) a.active  span {
+    background:url(../img/vacation_icon_on.png) no-repeat center;
+}
+
 /* section>container1>left>배스트 상품 영역 */
 .container1 .left .bestProduct {
     width: 100%; height: 240px;
@@ -107,8 +241,8 @@
 }
 /* section>container1>배너 영역 */
 .container1 .banner {
-    width: 482px; height: 556px;
-    background-color: crimson;
+    width: 482px; height: 540px;
+    /* background-color: crimson; */
     float: left;
 }
 
@@ -116,6 +250,7 @@
 #section .container2 {
     width:100%; height: 240px;
     margin-bottom:16px;
+    position: relative;
 }
 #section .container2 ul li {
     float:left;

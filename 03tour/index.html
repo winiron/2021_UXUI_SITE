@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/animate.css">
         <link rel="stylesheet" href="css/jquery.bxslider.css">
+        <link rel="stylesheet" href="css/common.css">
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
@@ -15,7 +16,11 @@
                 <div class="topWrap">
                     <div class="top">
                         <h1 class="logo"><a href="">himedia tour</a></h1>
-                        <div class="search"></div>
+                        <form action="#" method="POST" class="search">
+                            <label for="search" class="searchTitle">search</label>
+                            <input type="text" id="search" placeholder="검색어를 입력하세요" class="searchInp">
+                            <input type="submit" value="search" class="searchBtn">
+                        </form>
                         <div class="snsMenu">
                             <div class="tel">+82 02 1234 5678</div>
                             <div class="snsIcon">
@@ -28,15 +33,67 @@
                     </div>
                 </div>
                 <div class="gnbWrap">
-                    <div class="gnb"></div>
+                    <ul class="gnb">
+                        <li><a href="#">여행도시</a></li>
+                        <li><a href="#">호텔예약</a></li>
+                        <li><a href="#">렌트카</a></li>
+                        <li><a href="#">여행TIP</a></li>
+                        <li><a href="#">회사소개</a></li>
+                        <li><a href="#">커뮤니티</a></li>
+                    </ul>
                 </div>
             </header>
             <section id="section">
+                <img src="./img/AddBalloon_01.png">
                 <div class="container1 clearfix">
                     <div class="left">
-                        <div class="reservation"></div>
+                        <div class="reservation">
+                            <div class="list1">
+                                <div class="content"></div>
+                            </div>
+                            <div class="list2">
+                                <div class="content"></div>
+                            </div>
+                            <div class="list3">
+                                <div class="content"></div>
+                            </div>
+                            <div class="list4">
+                                <div class="content"></div>
+                            </div>
+                        </div>
+                        <ul class="rMenu">
+                            <li>
+                                <a data-slide-index="0" href="#">
+                                    <div class="iconTxt">
+                                        <span></span>공항예약
+                                    </div> 
+                                </a>
+                            </li>
+                            <li>
+                                <a data-slide-index="1" href="#">
+                                    <div class="iconTxt">
+                                        <span></span>호텔예약
+                                    </div> 
+                                </a>
+                            </li>
+                            <li>
+                                <a data-slide-index="2" href="#">
+                                    <div class="iconTxt">
+                                        <span></span>렌터카
+                                    </div> 
+                                </a>
+                            </li>
+                            <li>
+                                <a data-slide-index="3" href="#">
+                                    <div class="iconTxt">
+                                        <span></span>휴양지
+                                    </div> 
+                                </a>
+                            </li>
+                            </li>
+                        </ul>
                         <div class="bestProduct">
-                            <ul class="clearfix">
+                            <ul class="clearfix">   
                                 <li></li>
                                 <li></li>
                             </ul>
@@ -73,6 +130,17 @@
     <script src="js/jquery-3.1.1.min.js"></script>
     <script src="js/jquery.bxslider.js"></script>
     <script src="js/wow.js"></script>
+    <script type="text/javascript"> 
+        $(document).ready(function(){
+            $('.reservation').bxSlider({
+                mode:"fade",
+                auto:false,
+                controls:false,
+                pagerCustom: '.rMenu'
+            });// slide1st
+
+        }); // jquery ready
+    </script>
 
     </body>
 </html>
