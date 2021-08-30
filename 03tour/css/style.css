@@ -170,11 +170,11 @@ input[type="text"]:focus { outline:none; }
 .rMenu li a {
     display: block;
     width:130px; height:75px;
-    background-color:#0099cb;
+    background-color:#006599;
     color:white;
     padding-left:10px;
     line-height:75px;
-    border-bottom:1px solid #0087bf;
+    border-bottom:1px solid #0078a7;
 }
 .rMenu li:last-child a {
     border:0 none;
