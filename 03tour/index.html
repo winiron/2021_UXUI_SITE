@@ -285,8 +285,62 @@
                 </div>
                 <div class="container2">
                     <ul class="clearfix">
-                        <li></li>
-                        <li></li>
+                        <li>
+                            <div class="pSlider1">
+                                <div class="pSlideItem_01">
+                                    <a href="#">
+                                        <div class="txt">
+                                            <p class="pTitle">HILLTON HOTEL (PARIS)</p>
+                                            <p class="starScore"><span>★★★</span>★★</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="pSlideItem_02">
+                                    <a href="#">
+                                        <div class="txt">
+                                            <p class="pTitle">Hyatt Herald HOTEL (NY)</p>
+                                            <p class="starScore"><span>★★★★</span>★</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="pSlideItem_03">
+                                    <a href="#">
+                                        <div class="txt">
+                                            <p class="pTitle">Hotel Stadt (Munchen)</p>
+                                            <p class="starScore"><span>★★★★</span>★</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="pSlider2">
+                                <div class="pSlideItem_01">
+                                    <a href="#">
+                                        <div class="txt">
+                                            <p class="pTitle">경복궁(SEOUL)</p>
+                                            <p class="starScore"><span>★★★★★</span></p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="pSlideItem_02">
+                                    <a href="#">
+                                        <div class="txt">
+                                            <p class="pTitle">오로라 축제 (NORWAY)</p>
+                                            <p class="starScore"><span>★★★★</span>★★</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="pSlideItem_03">
+                                    <a href="#">
+                                        <div class="txt">
+                                            <p class="pTitle">푸른산호초 (Maldives)</p>
+                                            <p class="starScore"><span>★★★★</span>★</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>                            
+                        </li>
                         <li></li>
                         <li></li>
                     </ul>
@@ -319,7 +373,16 @@
                 touchEnabled:false,
                 pagerCustom: '.rMenu'
             });// slide1st
-
+            $('.pSlider1').bxSlider({
+                slideWidth:233,
+                pager:false,
+                auto:false
+            });// pSlider1
+            $('.pSlider2').bxSlider({
+                slideWidth:233,
+                pager:false,
+                auto:false
+            });// pSlider2
         }); // jquery ready
     </script>
 

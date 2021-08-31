@@ -111,8 +111,6 @@ input[type="text"]:focus { outline:none; }
     border:0 none;
 }
 
-
-
 /* section 영역 */
 #section {
     width:980px;
@@ -138,6 +136,7 @@ input[type="text"]:focus { outline:none; }
     float: left;
     position: relative;
 } 
+
 /* section>container1>left>예약 영역 */
 
 .container1 .container1Wrap .reservation {
@@ -192,7 +191,6 @@ input[type="text"]:focus { outline:none; }
     color:#141414; font-size:0.9rem; text-indent:10px;
     border-radius:5px;
 }
-
 .form fieldset ul .dayWrap .right input {
     width:134px; height:30px;
     color:#141414; font-size:0.9rem; text-indent:10px;
@@ -287,6 +285,7 @@ background:url(../images/alirplane_icon_off.png) no-repeat center;
     background-color:#fff;
     color:black;  
 }
+
 /* 엑티브상태에 대한 속성값 지정 */
 .rMenu li a.active { 
     background-color:#fff;
@@ -343,9 +342,6 @@ background:url(../images/alirplane_icon_off.png) no-repeat center;
     padding-left:16px; padding-right:16px;
 }
 
-
-
-
 /* section>container1>배너 영역 */
 .container1 .banner {
     width: 482px; height: 556px;
@@ -353,21 +349,114 @@ background:url(../images/alirplane_icon_off.png) no-repeat center;
     float: left;
 }
 
+
 /* section>container2영역 */
 #section .container2 {
     width:100%; height: 240px;
     margin-bottom:16px;
     position: relative;
 }
+
 #section .container2 ul li {
     float:left;
     width:233px; height: 240px;
     margin-right:16px;
     background-color: chocolate;
 }
+
+.pSlider1 {
+    width:233px; height: 240px;
+}
+.pSlider1 .pSlideItem {
+    width:233px; height: 240px;
+}
+.pSlider1 > .pSlideItem_01 a {
+    display: block;
+    width:233px; height: 240px;
+    background-image:url(../images/hotel-1749602_1920.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pSlider1 > .pSlideItem_02 a {
+    display: block;
+    width:233px; height: 240px;
+    background-image:url(../images/the-palm-962785_1920.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pSlider1 > .pSlideItem_03 a {
+    display: block;
+    width:233px; height: 240px;
+    background-image:url(../images/Schwerin_Castle.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pSlider1 div a .txt { 
+    width: 100%;
+    background-color:green;
+    position: absolute; left:0; bottom: 0;
+    color:white;
+    padding: 8px;
+    text-indent:16px;
+}
+.pSlider1 div a .txt span { 
+    color: #ff7510;
+}
+
+
+/* pSlider2 */
+.pSlider2 {
+    width:233px; height: 240px;
+}
+.pSlider2 .pSlideItem {
+    width:233px; height: 240px;
+}
+.pSlider2 > .pSlideItem_01 a {
+    display: block;
+    width:233px; height: 240px;
+    background-image:url(../images/seoulTour.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pSlider2 .pSlideItem_02 a {
+    display: block;
+    width:233px; height: 240px;
+    background-image:url(../images/orora_norway.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pSlider2 .pSlideItem_03 a {
+    display: block;
+    width:233px; height: 240px;
+    background-image:url(../images/Moldeve.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pSlider2 div a .txt { 
+    width: 100%;
+    background-color:#14252d;
+    position: absolute; left:0; bottom: 0;
+    color:white;
+    padding: 8px;
+    text-indent:16px;
+}
+.pSlider2 div a .txt span { 
+    color: #ff7510;
+}
+
+
+
 #section .container2 ul li:last-child {
     margin-right:0px;
 }
+
+
 /* section>container3 영역 */
 #section .container3 {
     width:100%; height: 240px;
