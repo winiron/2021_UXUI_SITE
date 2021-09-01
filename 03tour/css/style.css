@@ -395,7 +395,7 @@ background:url(../images/alirplane_icon_off.png) no-repeat center;
     background-size: cover;
 }
 .pSlider1 div a .txt { 
-    width: 100%;
+    width: 233px; height: 64px;
     background-color:green;
     position: absolute; left:0; bottom: 0;
     color:white;
@@ -439,7 +439,7 @@ background:url(../images/alirplane_icon_off.png) no-repeat center;
     background-size: cover;
 }
 .pSlider2 div a .txt { 
-    width: 100%;
+    width: 233px; height: 64px;
     background-color:#14252d;
     position: absolute; left:0; bottom: 0;
     color:white;
@@ -450,11 +450,70 @@ background:url(../images/alirplane_icon_off.png) no-repeat center;
     color: #ff7510;
 }
 
+#section .container2 ul li:last-child { margin-right:0px; }
 
-
-#section .container2 ul li:last-child {
-    margin-right:0px;
+.weather a {
+    display:block;
+    width: 233px; height: 240px;
+    background:url(../images/weather_bg_233_240.jpg) no-repeat center;
+    position: relative;
 }
+.weather a .tltle {
+    color: white;
+    text-align: center;
+    padding-top:20px;
+}
+.weather a .txt {
+    width: 233px; height: 64px;
+    position: absolute; left: 0; bottom: 0;
+    padding: 8px;
+    color:white; text-indent:16px;
+    background-color:rgba(0,0,0,0.7);
+}
+.weather a .txt .mainTxt span {
+    padding-right:10px;
+    font-size:1.1rem; font-weight:bold;
+}
+.weather a .txt .subTxt {
+    font-size:14px;
+}
+.facebook a {
+    display:block;
+    width: 233px; height: 240px;
+    background:url(../images/facebook_bg_233_240.jpg) no-repeat center;  
+    position: relative;  
+}
+.facebook > a > p.title {
+    padding:20px;
+    color:#484848;
+    font-size:14px;
+}
+.facebook > a > p.facebookGrade {
+    padding-left:20px;
+    color:#45629e;
+    font-size:12px;
+    letter-spacing:-1px;
+    font-weight:bold;
+}
+.facebook > a > p.facebookGrade > .span1 {
+    color:orange;
+}
+.facebook > a > p.facebookGrade > .span2 {
+    color:gray;
+}
+
+
+
+.facebook a .txt {
+    width: 233px; height: 64px;
+    position: absolute; left: 0; bottom: 0;
+    padding: 8px;
+    color:white; text-indent:16px;
+    background-color:#44619d;
+}
+
+
+
 
 
 /* section>container3 영역 */
