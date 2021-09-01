@@ -357,7 +357,6 @@ background:url(../images/alirplane_icon_off.png) no-repeat center;
     color:#152630; font-size:1.8rem; font-weight: 300; line-height:2.3rem; letter-spacing:-2px;
 }
 
-
 /* section>container2영역 */
 #section .container2 {
     width:100%; height: 240px;
@@ -524,19 +523,107 @@ background:url(../images/alirplane_icon_off.png) no-repeat center;
 
 
 
-/* section>container3 영역 */
-#section .container3 {
-    width:100%; height: 240px;
+/* section>info 영역 */
+#section .info {
+    width:100%; height:240px;
 }
-#section .container3 ul li {
+#section .info ul li {
     float:left;
-    width:233px; height: 240px;
+    width:233px; height:240px;
     margin-right:16px;
-    background-color:orange;
+    /* background-color:orange; */
+    position: relative;
 }
-#section .container3 ul li:last-child {
+#section .info ul li:last-child {
     margin-right:0px;
 }
+
+.infoBtn {
+    display:block;
+    position:relative;
+    width:233px; height:240px;
+    cursor:pointer;
+    position:relative;
+    overflow: hidden;
+}
+.tourInfo .infoBtn {
+    background:url(../images/tourInfor_bg_233_240.jpg) no-repeat center;
+}
+.foodInfo .infoBtn {
+    background:url(../images/goodFoodInfo_bg_233_240.jpg) no-repeat center;
+}
+.hotelInfo .infoBtn {
+    background:url(../images/HotelInfo_bg_233_240.jpg) no-repeat center;
+}
+.review .infoBtn {
+    background:url(../images/review_bg_233_240.jpg) no-repeat center;
+}
+.infoBg {
+    width:100%;height:100%; background:black;
+    opacity:0.2;
+    transition:0.3s
+}
+.infoTitle {
+    width: 100%; height: 100px;
+    color:white; font-size:30px; font-weight:500; padding-top:5px; line-height:24px;
+    position: absolute; left:0; top:0;
+    padding-top:30px;
+    text-align: center;
+    
+}
+.infoTitle span {
+    font-size:14px;
+}
+.infoTxt .infoTxtSub {
+    color:white; font-size:12px; text-align: center;
+}
+
+.infoCir {
+    width:20px; height:20px;
+    position:absolute; left:50%;top:50%;
+    transform:translate(-50%,-50%);
+    border:2px solid white;
+    border-radius:50%;
+    transition:0.3s;
+}
+.infoCir .bar2,
+.infoCir .bar1 {
+    width:14px;height:2px;
+    background: #fff;
+    position:absolute; left: 50%;top: 50%;
+    transform:translate(-50%,-50%);
+    border-radius:1px;
+}
+.infoCir .bar1 { 
+    transform:translate(-50%,-50%) rotate(90deg) 
+}
+.infoSub {
+    width: 100%;
+    color:white; font-size:12px;
+    position: absolute; left:0; bottom:0;
+    padding-bottom:20px;
+    text-align: center;
+    transition: all ease 1s 0s;
+    opacity:0;
+}
+.infoBtn:hover .infoBg {
+    opacity:0.9;
+}
+.infoBtn:hover .infoCir {
+    transform:translate(-50%,-50%) rotate(90deg)
+}
+.infoBtn:hover .infoSub {
+    opacity:1;
+}
+
+
+
+
+
+
+
+
+
 
 /* footer 영역 */
 #footer {
