@@ -599,7 +599,24 @@ background:url(../images/alirplane_icon_off.png) no-repeat center;
 
 /* footer 영역 */
 #footer {
-    width: 980px; height: 113px;
-    background-color: black;
+    width: 980px;
     margin:0 auto;
+    padding-top:40px; padding-bottom:40px;
+}
+#footer .lnb {
+    margin-bottom:5px;
+}
+#footer .lnb ul {
+    display: flex;
+}
+#footer .lnb ul li a {
+    display: block;
+    padding-left:20px;
+    color:#303339; font-size:16px;  
+    transition:0.3s;  
+}
+#footer .lnb ul li:first-child a { padding-left:0; }
+#footer .lnb ul li a:hover { color:#000; }
+#footer address {
+    color:#7b7b7b; font-size:12PX; font-style: normal;
 }
