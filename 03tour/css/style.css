@@ -70,16 +70,20 @@ input[type="text"]:focus { outline:none; }
 .topWrap .top .snsMenu .snsIcon div {
     width: 24px; height:24px;
 }
-.topWrap .top .snsMenu .snsIcon div:nth-child(1) { 
+.topWrap .top .snsMenu .snsIcon div a {
+    display: block;
+    width:24px; height:24px;
+}
+.topWrap .top .snsMenu .snsIcon div:nth-child(1) a { 
     background:#ebf1ff url(../images/sns_01.png) no-repeat center; 
 }
-.topWrap .top .snsMenu .snsIcon div:nth-child(2) { 
+.topWrap .top .snsMenu .snsIcon div:nth-child(2) a { 
     background:#32ccff url(../images/sns_02.png) no-repeat center; 
 }
-.topWrap .top .snsMenu .snsIcon div:nth-child(3) { 
+.topWrap .top .snsMenu .snsIcon div:nth-child(3) a { 
     background:#4cb922 url(../images/sns_03.png) no-repeat center;  
 }
-.topWrap .top .snsMenu .snsIcon div:nth-child(4) { 
+.topWrap .top .snsMenu .snsIcon div:nth-child(4) a { 
     background:#ff7510 url(../images/sns_04.png) no-repeat center;  
 }
 
