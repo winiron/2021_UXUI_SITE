@@ -9,8 +9,9 @@ body {
     font-family: 'Noto Sans KR', sans-serif; 
     background:url(../images/background.jpg) no-repeat center;  
     background-size: cover;
+    min-width:980px;
 }
-  
+
 .clearfix::after { 
     content:""; 
     clear:both; 

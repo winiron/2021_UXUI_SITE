@@ -110,11 +110,15 @@ input[type="text"]:focus { outline:none; }
     border-left:1px solid #e6e6e6; border-right:1px solid #e6e6e6;
 }
 .gnbWrap .gnb li a:hover {
+    background-color:#0e73a7 ; 
+    color:white;
+    border:none;
+}
+.gnbWrap .gnb li.active a {
     background-color:#0e73a7 ;
     color:white;
-    border:0 none;
+    border:none;
 }
-
 /* section 영역 */
 #section {
     width:980px;
@@ -601,6 +605,7 @@ background:url(../images/alirplane_icon_off.png) no-repeat center;
 .infoBtn:hover .infoCir { transform:translate(-50%,-50%) rotate(90deg); }
 .infoBtn:hover .infoSub { opacity:1; }
 
+
 /* footer 영역 */
 #footer {
     width: 980px;
@@ -624,3 +629,28 @@ background:url(../images/alirplane_icon_off.png) no-repeat center;
 #footer address {
     color:#7b7b7b; font-size:12PX; font-style: normal;
 }
+
+
+/* subPage company 작업 */
+
+.subContent .subImg {
+    height: 200px;
+    display: flex; justify-content: center; align-items: center;
+}
+.subContent.company .subImg {
+    background:url(../images/the-palm-962785_1920.jpg) no-repeat center;
+    background-size:cover;
+}
+
+.subContent .subImg .imgTitle {
+    text-align: center;
+}
+.subContent .subImg .imgTitle h3 {
+   font-size:2rem;
+}
+.subContent .subImg .imgTitle h3::after {
+    content: "";
+    display: block;
+    width: 80%; height: 2px; background-color: #000;
+    margin:0 auto;
+ }
