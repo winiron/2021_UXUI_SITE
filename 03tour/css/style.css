@@ -666,7 +666,7 @@ background:url(../images/alirplane_icon_off.png) no-repeat center;
     content: "";
     display: block;
     width: 20%; height: 3px; background-color:white;
-    position: absolute; top:64px; left:60px;
+    position: absolute; top:64px; left:76px;
 }
 
 .subContent .location li{
