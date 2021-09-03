@@ -1,5 +1,10 @@
 @charset "UTF-8";
 
+body.sub {
+    background-image:none;
+    background-color:#e9e9e9;
+}
+
 /* header 영역 */
 #header {
     margin-bottom:55px;
@@ -634,23 +639,75 @@ background:url(../images/alirplane_icon_off.png) no-repeat center;
 /* subPage company 작업 */
 
 .subContent .subImg {
-    height: 200px;
+    height: 300px;
     display: flex; justify-content: center; align-items: center;
-}
-.subContent.company .subImg {
-    background:url(../images/the-palm-962785_1920.jpg) no-repeat center;
     background-size:cover;
 }
-
+.subContent.company .subImg {
+    background:url(../images/conmpanyInfo.jpg) no-repeat center;  
+}
 .subContent .subImg .imgTitle {
     text-align: center;
+    transform:translateY(-20px);
 }
 .subContent .subImg .imgTitle h3 {
-   font-size:2rem;
+    color:white;
+    font-size:2.5rem;
+    text-shadow:2px 3px 5px rgba(0,0,0,0.4);
+    position: relative;
+}
+.subContent .subImg .imgTitle p {
+    color:white;
+    font-size:1rem; font-weight:300;
+    text-shadow:2px 3px 5px rgba(0,0,0,0.2);
+    padding-top:14px;
 }
 .subContent .subImg .imgTitle h3::after {
     content: "";
     display: block;
-    width: 80%; height: 2px; background-color: #000;
+    width: 20%; height: 3px; background-color:white;
+    position: absolute; top:64px; left:60px;
+}
+
+.subContent .location li{
+    float:left;
+}
+.subContent .location li a {
+    display: block;
+    color:#d1d3d4; font-size:14px;
+    padding:10px;
+    line-height:50px;
+    transform:translateY(15px);
+    position: relative;
+}
+.subContent .location li:nth-child(2) a::before {
+    content:"";
+    display: block; width:10px; height: 10px;
+    background:url(../images/location_icon_6_8.png) no-repeat center;
+    position: absolute; left:-4px; top: 31px;
+}
+.subContent .location li:nth-child(3) a { color:#fff; }
+.subContent .location li:nth-child(3) a::before {
+    content:"";
+    display: block; width:10px; height: 10px;
+    background:url(../images/location_icon_6_8.png) no-repeat center;
+    position:absolute; left:-4px; top:31px;
+}
+
+.container {
+    width:980px; height:auto;
+    background-color:white;
+    border-top:10px solid #0e73a7;
+    border-bottom:10px solid #0e73a7;
     margin:0 auto;
- }
+    position: relative;top:-50px;
+    padding:60px;
+
+}
+.container img { 
+    display: block;
+}
+#footer.subFooter {
+    padding-top: 0px;
+    padding-bottom: 30px;
+}
