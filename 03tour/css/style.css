@@ -643,9 +643,13 @@ background:url(../images/alirplane_icon_off.png) no-repeat center;
     display: flex; justify-content: center; align-items: center;
     background-size:cover;
 }
-.subContent.company .subImg {
-    background:url(../images/conmpanyInfo.jpg) no-repeat center;  
-}
+.subContent.cityTour .subImg { background:url(../images/sub_city_tour.jpg) no-repeat center; }
+.subContent.hotelReservation .subImg { background:url(../images/sub_hotel_reservation.jpg) no-repeat center; }
+.subContent.rentCar .subImg { background:url(../images/sub_rentcar.jpg) no-repeat center; }
+.subContent.toutTip .subImg { background:url(../images/sub_tour_tip.jpg) no-repeat center; }
+.subContent.company .subImg { background:url(../images/conmpanyInfo.jpg) no-repeat center; }
+.subContent.community .subImg { background:url(../images/sub_community.jpg) no-repeat center; }
+
 .subContent .subImg .imgTitle {
     text-align: center;
     transform:translateY(-20px);
