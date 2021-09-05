@@ -5,6 +5,11 @@ body.sub {
     background-color:#e9e9e9;
 }
 
+#wrap {
+    position: relative;
+    z-index:1;
+}
+
 /* header 영역 */
 #header {
     margin-bottom:55px;
@@ -377,6 +382,7 @@ background:url(../images/alirplane_icon_off.png) no-repeat center;
 }
 .container1 .banner .bannerWrap  .bannerWrapSub { 
     color:#152630; font-size:1.8rem; font-weight:500; line-height:2.3rem; letter-spacing:-2px;
+    z-index:1;
 }
 
 /* section>container2영역 */
@@ -714,4 +720,34 @@ background:url(../images/alirplane_icon_off.png) no-repeat center;
 #footer.subFooter {
     padding-top: 0px;
     padding-bottom: 30px;
+}
+
+
+/* 움직이는 이미지 */
+
+
+
+.air {
+    position: absolute; bottom: 0; left: 0;
+    animation-name:air;
+    animation-duration:3s;
+    animation-fill-mode: forwards;
+    animation-iteration-count:infinite;
+}
+@keyframes air {
+    form { bottom: 0; left: 0; transform:scale(0.5);}
+    to { bottom: 1500px; left: 1800px;  transform:scale(2);}
+}
+
+.bal {
+    animation-name: bal;
+    animation-duration:5s;
+    animation-fill-mode: forwards;
+    animation-iteration-count:infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+@keyframes bal {
+    /* form { top:-200px; } */
+    to { top:20%;  }
 }
