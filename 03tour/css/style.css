@@ -712,10 +712,11 @@ background:url(../images/alirplane_icon_off.png) no-repeat center;
     margin:0 auto;
     position: relative;top:-50px;
     padding:60px;
+    text-align: center;
 
 }
 .container img { 
-    display: block;
+    display:block;
 }
 #footer.subFooter {
     padding-top: 0px;
