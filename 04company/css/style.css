@@ -36,14 +36,15 @@
         z-index:99999;
     }
     #headerTop .mainMenu { 
-        position:fixed; left:-100%; top:0;
+        position:fixed; left:0%; top:0%;
         width:100%; height:100%;
         background-color:skyblue;
         display:flex; justify-content: center; align-items:center;
         text-align:center; transition:0.3s;
+        opacity:0;
     }
     #headerTop .mainMenu.view{ 
-        left: 0;
+        opacity:1;
     }
     #headerTop .mainMenu li { margin-bottom:15px;}
     #headerTop .mainMenu a {

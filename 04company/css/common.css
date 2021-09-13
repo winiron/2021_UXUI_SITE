@@ -21,6 +21,17 @@
 
 .bx-wrapper .bx-pager { width: 100px;}
 
+/* 2021.09.13 : controles 수정작업*/
+.sliderWrap .nextBtn,
+.sliderWrap .prevBtn { 
+    position:absolute; top:50%; transform:translateY(-50%);
+}
+.sliderWrap .nextBtn { right:30px; }
+.sliderWrap .prevBtn {left: 30px; }
+
+
+
+
 
 
 
