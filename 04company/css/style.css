@@ -1,32 +1,5 @@
 @charset "UTF-8";
 
-/* 공통 */
-html, body { height:100%; }
-.logo {
-    background:red; 
-    height:50px;
-    padding:0 10px;
-}
-#headerTop {
-    background:pink;
-    position:fixed;
-    display:flex; justify-content:space-between; align-items:center;
-    z-index:1;
-}
-.toggleMenu { display:none; }
-
-.sliderWrap .itemOne { background:url(../images/mainimg01.jpg) no-repeat center;  background-size:cover; }
-.sliderWrap .itemTwo { background:url(../images/mainimg02.jpg) no-repeat center;  background-size:cover; }
-
-.sliderWrap .itemTxt { 
-    position: absolute; left:50%; top:50%;  transform:translate(-50%, -50%);
-    color:white;
-}
-.sliderWrap .itemTxt h3 { font-size:3rem; text-align: center; line-height:3rem; padding-bottom:20px;}
-.sliderWrap .itemTxt p { font-size:0.9rem; text-align: center; line-height:1.8rem; font-weight:400; color:lightgrey;}
-
-.bx-wrapper .bx-pager { width: 100px;}
-
 
 /* PC버전 시작 */
 @media screen and (min-width:700px){
@@ -50,32 +23,59 @@ html, body { height:100%; }
     .sliderWrap .itemTwo { height: 1000px; }
 
     .bx-wrapper .bx-pager { left:500px; }
-
 }
 /* PC버전 종료 */
 
+
 /* MobILE 버전 시작 */
 @media screen and (max-width:699px) {
-    
     #mainHeader { background-color:#ddd; }
-    #headerTop {
+    #headerTop { 
         width:100%;
         padding:0 16px;
+        z-index:99999;
     }
-    .mainMenu { display: none; }
+    #headerTop .mainMenu { 
+        position:fixed; left:-100%; top:0;
+        width:100%; height:100%;
+        background-color:skyblue;
+        display:flex; justify-content: center; align-items:center;
+        text-align:center; transition:0.3s;
+    }
+    #headerTop .mainMenu.view{ 
+        left: 0;
+    }
+    #headerTop .mainMenu li { margin-bottom:15px;}
+    #headerTop .mainMenu a {
+        display: block;
+        font-size: 1.5rem;  line-height:40px; width: 200px; font-weight:bold;
+        background-color:orange;
+    }
     .toggleMenu {
         display: block;
         width:40px; height:40px;
         position:relative;
         background: #000;
+        z-index:2;
     }
     .toggleMenu div {
         width:25px; height:3px;
         position:absolute; left:50%; top:50%; transform:translate(-50%, -50%);
         background: white;
+        border-radius:2px;
+        transition:0.3s;
+        cursor:pointer;
     }
     .toggleMenu .bar1 { top:10px; } /*이동*/
     .toggleMenu .bar3 { top:30px; } /*이동*/
+
+    .toggleMenu.active .bar1 { 
+        top:50%; transform:translate(-50%, -50%) rotate(45deg); 
+    }
+    .toggleMenu.active .bar2 { opacity:0;}
+    .toggleMenu.active .bar3 {
+        top:50%; transform:translate(-50%, -50%) rotate(-45deg); 
+    }
 
     .sliderWrap .itemOne,
     .sliderWrap .itemTwo { 
