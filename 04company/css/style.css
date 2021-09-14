@@ -1,87 +1,129 @@
-@charset "UTF-8";
+@charset "utf-8";
+html,body{height: 100%;}
 
+#header_top .logo{background: red;height: 50px;padding: 0 10px;}
 
-/* PC버전 시작 */
-@media screen and (min-width:700px){
-    #mainHeader {
-        height:1950px;
-        background-color:#ddd;
-    }
-    #headerTop {
-        width:1200px; 
-        left:50%; top:20px; transform:translateX(-50%);   
-    }
-    .mainMenu { background:skyblue; }
-    .mainMenu li { float:left; }
-    .mainMenu li a { 
-        display: block;
-        line-height:50px; text-align:center;
-        padding:0 30px;/*상하:0 죄우:30*/
-    }
-    .sliderWrap .itemTxt { top:30%; }    
-    .sliderWrap .itemOne,
-    .sliderWrap .itemTwo { height: 1000px; }
-
-    .bx-wrapper .bx-pager { left:500px; }
+.bx-wrapper {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: 0 none;
+    margin-bottom: 0;
 }
-/* PC버전 종료 */
+.sliderWrap .slideTxt{
+    position: absolute;left: 50%;top: 30%;
+    transform: translate(-50%,-50%);
+    width: 500px;text-align: center;
+}
+.sliderWrap .slideTxt h3{font-size: 3em;}
+.sliderWrap .nextBtn,
+.sliderWrap .prevBtn{position: absolute;top: 50%;transform:translateY(-50%);cursor:pointer}
+.sliderWrap .nextBtn{right: 30px;}
+.sliderWrap .prevBtn{left: 30px;}
 
 
-/* MobILE 버전 시작 */
-@media screen and (max-width:699px) {
-    #mainHeader { background-color:#ddd; }
-    #headerTop { 
-        width:100%;
-        padding:0 16px;
-        z-index:99999;
-    }
-    #headerTop .mainMenu { 
-        position:fixed; left:0%; top:0%;
-        width:100%; height:100%;
-        background-color:skyblue;
-        display:flex; justify-content: center; align-items:center;
-        text-align:center; transition:0.3s;
-        opacity:0;
-    }
-    #headerTop .mainMenu.view{ 
-        opacity:1;
-    }
-    #headerTop .mainMenu li { margin-bottom:15px;}
-    #headerTop .mainMenu a {
-        display: block;
-        font-size: 1.5rem;  line-height:40px; width: 200px; font-weight:bold;
-        background-color:orange;
-    }
-    .toggleMenu {
-        display: block;
-        width:40px; height:40px;
-        position:relative;
-        background: #000;
-        z-index:2;
-    }
-    .toggleMenu div {
-        width:25px; height:3px;
-        position:absolute; left:50%; top:50%; transform:translate(-50%, -50%);
-        background: white;
-        border-radius:2px;
-        transition:0.3s;
-        cursor:pointer;
-    }
-    .toggleMenu .bar1 { top:10px; } /*이동*/
-    .toggleMenu .bar3 { top:30px; } /*이동*/
+.sliderWrap .bx-wrapper .bx-pager.bx-default-pager a{
+    background: red;transition:0.3s
+}
+.sliderWrap .bx-wrapper .bx-pager.bx-default-pager a.active{
+    background: blue;width: 40px;height: 10px;
+}
+.sliderWrap .bx-wrapper .bx-pager.bx-default-pager a:hover{
+    background: white;
+}
 
-    .toggleMenu.active .bar1 { 
-        top:50%; transform:translate(-50%, -50%) rotate(45deg); 
+
+@media screen and ( min-width:700px ){
+    #main_header{height: 1950px;background: #ddd;}
+
+    #header_top{
+        width: 1240px;background: pink;z-index: 1;
+        position: fixed;left:50%;transform: translateX(-50%);top:20px;
+        display: flex;justify-content: space-between;align-items:center
     }
-    .toggleMenu.active .bar2 { opacity:0;}
-    .toggleMenu.active .bar3 {
-        top:50%; transform:translate(-50%, -50%) rotate(-45deg); 
+    
+    #header_top .gnb{background: skyblue;}
+    #header_top .gnb li{float: left;}
+    #header_top .gnb li>a{display: block;line-height: 50px;text-align: center;padding:0 30px}
+    .toggle{display: none;}
+
+    .sliderWrap .li_1st,.sliderWrap .li_2st{
+        height: 1000px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    .sliderWrap .li_1st{
+        background-image: url(../images/mainimg01.jpg);
+    }
+    .sliderWrap .li_2st{
+        background-image: url(../images/mainimg02.jpg);
+    }
+    .bx-wrapper .bx-pager{
+        bottom: 400px;
+    }
+    
+    
+} /* pc media */
+
+
+@media screen and ( max-width:699px ){
+    #main_header{background: #ddd;}
+
+    #header_top{
+        background: pink;padding: 0 16px;z-index:99999;
+        position: fixed;width: 100%;
+        display: flex;justify-content: space-between;align-items:center
+    }
+    
+    #header_top .gnb{
+        position: fixed;width: 100%;height: 100%;background: skyblue;
+        left: 0;top: -100%;z-index:1;display:flex;justify-content: center;
+        align-items:center;text-align: center;transition:0.3s
+    }
+    #header_top .gnb.view{
+        top: 0;
+    }
+    #header_top .gnb a{
+        line-height: 40px;background: orange;width: 200px;display: block;
+        font-size: 1.5em;font-weight:bold;
+    }
+    #header_top .gnb li{margin-bottom: 15px;}
+
+    
+    .toggle{display: block;}
+    .toggle{width: 40px;height: 40px;background: #000;position: relative;z-index:2}
+    .toggle div{
+        position: absolute;width: 25px;height: 3px;background: white;
+        left: 50%;top:50%;transform: translate(-50%,-50%);
+        border-radius:2px;transition:0.3s;cursor:pointer
+    }
+    .toggle .bar1{top:10px;}
+    .toggle .bar3{top:30px}
+
+    .toggle.active .bar1{top:50%;transform:translate(-50%,-50%) rotate(45deg)}
+    .toggle.active .bar2{opacity:0}
+    .toggle.active .bar3{top:50%;transform:translate(-50%,-50%) rotate(-45deg)}
+
+    .sliderWrap .li_1st,.sliderWrap .li_2st{
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    .sliderWrap .li_1st{
+        background-image: url(../images/mainimg01.jpg);
+    }
+    .sliderWrap .li_2st{
+        background-image: url(../images/mainimg02.jpg);
     }
 
-    .sliderWrap .itemOne,
-    .sliderWrap .itemTwo { 
-        height:100vh;   /*뷰포트 단위*/
-    } 
+    .sliderWrap .slideTxt{width: 300px;top:50%}
+    .sliderWrap .nextBtn,
+    .sliderWrap .prevBtn{display: none;}
+    .bx-wrapper .bx-pager{
+        bottom: 30px;
+    }
+    
 
-} 
-/* MobILE 버전 종료 */
+}/* mobile media */

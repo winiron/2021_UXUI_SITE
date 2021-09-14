@@ -1,26 +1,35 @@
-$(".slider").bxSlider();
-
-
-// // jQuery에서의 이벤트 작성 4가지 방법
-// $("toggleMenu").on("EventName",Listener);
-// $("toggleMenu").on("click",function(){});
-// $("toggleMenu").click(function(){});// jQuery에서의 이벤트 작성 . 축약형
-
-//클래스 삽입 & 삭제하기
-$(".toggleMenu").click(function(){
-    const toggle = $(".toggleMenu").attr("class");//value toggle
-    // console.log(toggle);
-    if(toggle == "toggleMenu") {
-        // $(".toggleMenu").addClass("active");//jQuery
-        document.getElementsByClassName("toggleMenu")[0].classList.add("active");
-        $(".mainMenu").addClass("view");
-    }else{
-        // $(".toggleMenu").removeClass("active");//jQuery
-        document.getElementsByClassName("toggleMenu")[0].classList.remove("active");
-        $(".mainMenu").removeClass("view");
-    }
-    $(window).resize(function(){
-        $(".mainMenu").removeClass("view");
-        $(".toggleMenu").removeClass("active")
+$(document).ready(function(){
+    const slider1 = $(".slider").bxSlider({
+        controls:false
     });
+    $(".nextBtn").click(function(){
+        slider1.goToNextSlide();
+    });
+    $(".prevBtn").click(function(){
+        slider1.goToPrevSlide();
+    });
+
+    // $(".toggle").on("이벤트명",리스너);
+    // $(".toggle").on("click",function(){});
+    // $(".toggle").click(function(){})
+    $(".toggle").click(function(){
+        const toggle = $(".toggle").attr("class"); // value toggle
+        console.log(toggle);
+
+        if( toggle == "toggle"){
+            //$(".toggle").addClass("active");
+            document.getElementsByClassName("toggle")[0].classList.add("active");
+            $(".gnb").addClass("view");
+        }else{
+            //$(".toggle").removeClass("active");
+            document.getElementsByClassName("toggle")[0].classList.remove("active");
+            $(".gnb").removeClass("view");
+        }
+    });
+
+    $(window).resize(function(){
+        $(".toggle").removeClass("active");
+        $(".gnb").removeClass("view");
+    });
+   
 });
