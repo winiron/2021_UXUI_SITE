@@ -6,6 +6,8 @@ body {
 .header { 
     height:100vh; 
     position:relative;
+    overflow:hidden;
+    background-color:#feae1b;
  }
 .layer { 
     width:100vw; height:100vh;
