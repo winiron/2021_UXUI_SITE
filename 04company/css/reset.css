@@ -1,6 +1,28 @@
 @charset "utf-8";
-*{margin: 0;padding: 0;box-sizing: border-box;}
-li{list-style: none;}
-a:link,a:visited{text-decoration: none;color: #000;}
-.clearfix:after{content:"";clear: both;display: block;}
-img{display: block;}
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;400;500;600;700&display=swap');
+
+* { margin:0; padding:0; box-sizing:border-box; }
+
+body { 
+    font-family: 'Noto Sans KR', sans-serif; 
+}
+
+.clearfix::after { 
+    content:""; 
+    clear:both; 
+    display:block; 
+}
+
+li { list-style-type:none; }
+
+a { text-decoration:none; }
+a:link { color:black; }
+a:visited { color:black}
+
+/*common*/
+
+img {display: block;}
