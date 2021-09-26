@@ -1,55 +1,363 @@
 @charset "UTF-8";
 
-/* bx slider 관련 */
-.bx-wrapper {
-    -moz-box-shadow:0 none;
-    -webkit-box-shadow:0 none;
-    box-shadow:0 none;/* 테두리-없애기 */
-    border: 0 none;/* 테두리-없애기 */
-    margin-bottom: 0;/* 테두리-없애기 */
-}
+/* 공통 영역 시작 */
 
-.sliderWrap .itemOne { background:url(../images/mainimg01.jpg) no-repeat center;  background-size:cover; }
-.sliderWrap .itemTwo { background:url(../images/mainimg02.jpg) no-repeat center;  background-size:cover; }
-
-.sliderWrap .itemTxt { 
-    position: absolute; left:50%; top:50%;  transform:translate(-50%, -50%);
-    color:white;
-}
-.sliderWrap .itemTxt h3 { font-size:3rem; text-align: center; line-height:3rem; padding-bottom:20px;}
-.sliderWrap .itemTxt p { font-size:0.9rem; text-align: center; line-height:1.8rem; font-weight:400; color:lightgrey;}
-
-.bx-wrapper .bx-pager { width: 100px;}
-
-/* 2021.09.13 : controles 수정작업*/
-.sliderWrap .nextBtn,
-.sliderWrap .prevBtn { 
-    position:absolute; top:50%; transform:translateY(-50%);
-}
-.sliderWrap .nextBtn { right:30px; }
-.sliderWrap .prevBtn {left: 30px; }
+html,body{ height: 100%; }
 
 
+/* 공통 : 헤더 영역 작업 시작 */
+#headerTop > .logo > a { display:block; width:200px; height:100px; }
 
 
-
-
-
-.mB_0 {
+/* 공통 : 헤더 > 슬라이더 영역 시작*/
+.bx-wrapper { /* 테두리 설정*/
+    -moz-box-shadow:none;
+    -webkit-box-shadow:none;
+    box-shadow:none;
+    border:0 none;
     margin-bottom:0;
 }
+.sliderWrap .nextBtn,
+.sliderWrap .prevBtn { position:absolute; top:50%; transform:translateY(-50%); cursor:pointer; }
+.sliderWrap .nextBtn { right:30px; }
+.sliderWrap .prevBtn { left:30px; }
+.sliderWrap .bx-wrapper .bx-pager.bx-default-pager a { background:white; transition:0.3s }
+.sliderWrap .bx-wrapper .bx-pager.bx-default-pager a.active { width:40px; height:10px; background:#00a991; }
+.sliderWrap .bx-wrapper .bx-pager.bx-default-pager a:hover { background:#00a991; }
 
+.sliderWrap > .txt > .title > h2 { 
+    font-family:'Noto Serif KR',serif; font-size:3.75rem; font-weight:400; 
+    text-shadow: 0px 1px 1px darkgray;
+}
+.sliderWrap > .txt > .title > h1 { 
+    font-family:'Noto Serif KR',serif; font-size:3.75rem; font-weight:400; text-shadow: 0px 1px 1px darkgray;
+    margin-bottom:20px;
+}
+.sliderWrap > .txt > .title > h1 > span { color:#00a991;}
+.sliderWrap > .txt > p { font-size: 1.25rem; text-shadow: 0px 1px 1px darkgray;}
+.sliderWrap > .txt > p > span { font-size: 1rem; font-weight:300; text-shadow: 0px 1px 1px darkgray;}
+/* 공통 : 헤더> 슬라이더 영역 종료*/
 
-html, body { height:100%; }
-.logo {
-    background:red; 
-    height:50px;
-    padding:0 10px;
+/* 공통 : 헤더 > 아이콘 영역 시작*/
+.iconWrap {
+    width:800px; height:400px; 
+    background-color:cornflowerblue;
+    display:flex; flex-wrap:wrap;
+} 
+.iconWrap > div { width:200px; height:200px; }
+.iconWrap > div > a {
+    display:inline-block; width:100%; height:100%;
+    display:flex; justify-content:center; align-items:center;
+    background-color:#00a991;
 }
-#headerTop {
-    background:pink;
-    position:fixed;
-    display:flex; justify-content:space-between; align-items:center;
-    z-index:1;
+.iconWrap > div:first-child > a > .icon { text-align: center;}
+.iconWrap > div:first-child > a > .icon > img { display: inline-block;}
+.iconWrap > div > a:hover { background-color:#0A6356; } 
+.iconWrap > div > a:hover > .icon > p > span {  color:white; }
+.iconWrap > div > a > .icon > p { font: size 1rem; color:white; text-align:center; line-height:1.3rem; }
+.iconWrap > div > a > .icon > p > span {color:#d4d9dc; font-size:0.8rem; font-weight:300; }
+
+/* 공통 : 헤더 > 아이콘 영역 종료*/
+
+/* 공통 : 비전 영역 시작*/
+#vision { 
+    padding:30px;  
+    background:url(../images/vision_bg.png) no-repeat center;
+    background-size: cover;
+    margin-bottom:60px;
 }
-.toggleMenu { display:none; }
+#vision > .visionWrap {
+    width:90%;
+    margin:0 auto;
+    text-align:center;
+}
+#vision > .visionWrap .title,
+#vision > .visionWrap .subTitle,
+#vision > .visionWrap .sentence { color:white }
+#vision > .visionWrap .subTitle::after {
+    content:"";
+    display:block;
+    width:6px; height:6px;
+    border-radius:50%;
+    background-color:#00a991;
+    margin:10px auto; margin-bottom:0px;
+}
+#vision > .visionWrap .title { padding-bottom:20px; }
+#vision > .visionWrap .sentence { text-align:center; margin-bottom:40px; padding-top:10px; }
+#vision > .visionWrap .sentence > span { font-weight:bold; color:#0BF4CD; }
+#vision > .visionWrap img { margin:0 auto; }
+/* 공통 : 비전 영역 종료*/
+
+/* 공통 : Adoption(입양신청) 영역 시작*/
+#adoption { margin-bottom:60px; }
+#adoption > .adoptionWrap > .titleWrap > .title { font-size:3rem; font-weight:bold; }
+#adoption > .adoptionWrap > .titleWrap > .subTitle { padding-bottom:20px; }
+#adoption > .adoptionWrap > .titleWrap > .titleLine {
+    width:200px; height:10px;
+    background:url(../images/tilte_line.png) no-repeat center;
+    margin:0 auto; margin-bottom:50px;
+}
+#adoption > .adoptionWrap > .content > div > a {
+    display: block;
+    width: 100%; height: 100%;
+    background-size: cover;
+    /* border-radius:20px; */
+    transition: all linear 0.3s;
+    position: relative;
+}
+#adoption > .adoptionWrap > .content > div > a > .aMask {
+    width:100%; height:100%;
+    background-color:black;
+    transition:all linear 0.3s;
+    /* border-radius:20px; */
+    opacity:0;
+}
+#adoption > .adoptionWrap > .content > div > a > .txtWrap { position:absolute; left:50%; top:50%; transform:translate(-50%, -50%); }
+#adoption > .adoptionWrap > .content > div > a > .txtWrap.off > .name { font-size:1.2rem; font-weight:bold; }
+.txtWrapMask {
+    width: 200px; height: 200px;
+    border-radius: 50%;
+    background-color: white;
+    position:absolute; left:50%; top:50%; transform: translate(-50%, -50%);
+    opacity:0.3;
+}
+.txtWrap.off { 
+    opacity:1;
+    transition: all linear 0.3s;
+}
+.txtWrap > .lanking::before { 
+    content:"";
+    display:inline-block; width: 20px; height:12px;
+    background:url("../images/adoption_view_icon.png") center no-repeat;
+    background-size:cover; z-index:0; 
+    margin-right:10px;  
+}
+.txtWrap.on {
+    width:100%; 
+    color:white;
+    line-height:24.7px;
+    opacity:0;
+    transition: all linear 0.3s;
+}
+.txtWrap.on > p{  line-height:1.8rem;}
+#adoption > .adoptionWrap > .content > div > a:hover { opacity:1; }
+#adoption > .adoptionWrap > .content > div > a:hover > .aMask {opacity:0.7; }
+#adoption > .adoptionWrap > .content > div > a:hover > .txtWrapMask{ opacity:0; }
+#adoption > .adoptionWrap > .content > div > a:hover > .txtWrap.on {opacity:1;}
+#adoption > .adoptionWrap > .content > div > a:hover > .txtWrap.off {opacity:0;}
+
+#adoption > .adoptionWrap > .content > div > a {
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size:cover;
+}
+
+#adoption > .adoptionWrap > .content > .dog1 > a { background-image:url(../images/adoption_01_dog.jpg); }
+#adoption > .adoptionWrap > .content > .dog2 > a { background-image:url(../images/adoption_02_dog.jpg); }
+#adoption > .adoptionWrap > .content > .dog3 > a { background-image:url(../images/adoption_03_dog.jpg); }
+#adoption > .adoptionWrap > .content > .dog4 > a { background-image:url(../images/adoption_04_dog.jpg); }
+#adoption > .adoptionWrap > .content > .dog5 > a { background-image:url(../images/adoption_05_dog.jpg); }
+#adoption > .adoptionWrap > .content > .dog6 > a { background-image:url(../images/adoption_06_cat.jpg); }
+#adoption > .adoptionWrap > .content > .dog7 > a { background-image:url(../images/adoption_07_dog.jpg); }
+#adoption > .adoptionWrap > .content > .dog8 > a { background-image:url(../images/adoption_08_dog.jpg); }
+#adoption > .adoptionWrap > .content > .dog9 > a { background-image:url(../images/adoption_09_cat.jpg); }
+#adoption > .adoptionWrap > .content > .dog10 > a { background-image:url(../images/adoption_10_dog.jpg); }
+#adoption > .adoptionWrap > .content > .dog11 > a { background-image:url(../images/adoption_11_cat.jpg); }
+#adoption > .adoptionWrap > .content > .dog12 > a { background-image:url(../images/adoption_12_dog.jpg); }
+#adoption > .adoptionWrap > .content > .dog13 > a { background-image:url(../images/adoption_13_cat.jpg); }
+#adoption > .adoptionWrap > .content > .dog14 > a { background-image:url(../images/adoption_14_cat.jpg); }
+#adoption > .adoptionWrap > .content > .dog15 > a { background-image:url(../images/adoption_15_cat.jpg); }
+#adoption > .adoptionWrap > .content > .dog16 > a { background-image:url(../images/adoption_16_dog.jpg); }
+
+/* 공통 : Adoption(입양신청) 영역 종료*/
+
+/* 공통 : borad(게시판) 영역 시작*/
+#notice > div > .titleWrap {
+    width:100%; height:80px; 
+    display:flex;
+    border-bottom:1px solid lightgray;
+    position: relative;
+    margin-bottom:30px;
+}
+#notice > div > .titleWrap > .title {
+    color:#141414; font-size:20px; line-height: 80px;
+}
+#notice > div > .titleWrap > .goBtn { 
+    position:absolute; right:0; top:50%;  transform:translateY(-50%);
+    width:30px; height:30px;
+    border:1px solid darkgrey;
+}
+#notice > div > .titleWrap > .goBtn > a { 
+    display:block; width:30px; height:30px;
+    background:url(../images/goBtn.png) no-repeat center;
+    transition:0.3s;
+}
+#notice > div > .titleWrap > .goBtn > a:hover { 
+    background:url(../images/goBtn_on.png) no-repeat center;
+}
+#notice > div > .contents > li { 
+    display: flex; justify-content: space-between; 
+    margin-bottom:10px;
+}
+/* #notice > div > .contents > li > .sentence { width:80%; } */
+#notice > div > .contents > li > .sentence > a { 
+    display:block; width:100%;
+    color:#6c7c7f;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+#notice > div > .contents > li > .sentence > a::before {
+    content:"·";
+    display:inline-block;
+    margin-right:10px;
+}
+#notice > div > .contents > li > .date { color:#6c7c7f; text-align:right; }
+#notice > div > .contents > li > .sentence > a:hover { color:#141414; }
+/* 공통 : borad(게시판) 영역 종료*/
+
+/* 공통 : video(동영상) 영역 시작*/
+#video > .viedoWrap > li { 
+    width:300px; height:300px;
+    display:flxe; flex-direction:row; flex-wrap:wrap;
+    background-size:cover;
+    position:relative;
+}
+#video > .viedoWrap > .title { 
+    background-color:#00a991; 
+    position: relative;
+}
+#video > .viedoWrap > .title > a {
+    display: block;
+    width: 40px; height:40px;
+    border:1px solid white;
+    position: absolute; bottom:14px; right: 20px;
+}
+#video > .viedoWrap > .title > a > p { 
+    color:lightgray; font-size:2rem; font-weight:bold;
+    text-align: center; line-height:35px;
+    transition:0.3s;
+}
+#video > .viedoWrap > .title > a:hover > p { color:white; } 
+#video > .viedoWrap > .title > .txt {
+    position: absolute; left:50%; top:50%; transform:translate(-50%,-50%);
+    text-align:center;
+}
+#video > .viedoWrap > .title > .txt > p { color:white; font-size:2rem; line-height:2rem; font-weight:bold;}
+#video > .viedoWrap > .title > .txt > p > span { color:white; font-size:1rem; font-weight:500;}
+#video > .viedoWrap > .goBtn { background-color:#00a991; }
+#video > .viedoWrap > .movie > a {
+    display: block;
+    width:100%; height:100%;
+    background:url(../images/movie_start_icon.png) no-repeat center;
+    transition:0.3s;
+}
+#video > .viedoWrap > .movie > .txt {
+    width:100%;
+    background-color:rgba(0, 0, 0, 0.9);
+    position:absolute; bottom:0;
+    padding:5px 10px;
+    color:white;
+}
+#video > .viedoWrap > .movie { position: relative; }
+#video > .viedoWrap > .movie > .txt > .date { font-size:0.8rem; font-weight:400;}
+#video > .viedoWrap > .movie > .txt > .sentence { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+#video > .viedoWrap > .movie > a:hover { background:url(../images/movie_start_icon_on.png) no-repeat center; }
+
+/* 공통 : video(동영상) 영역 종료*/
+
+/* 공통 : 후원하기 영역 시작*/
+#life {
+    width:100%; height:500px;
+    padding:100px 0px;
+}
+#life > .titleWrap { 
+    font-family:'Noto Serif KR',serif; text-align:center; color:white;
+    margin-bottom:60px;
+}
+#life > .titleWrap > .subTitle { font-size: 1.875rem;} 
+#life > .titleWrap > .subTitle > span { color:orange; } 
+#life > .titleWrap > .mainTitle { font-size: 2rem;} 
+
+#life > .sentence { 
+    text-align:center; 
+    color: white;
+    margin-bottom:60px;
+}
+#life > .button { 
+    width:200px; height:60px;
+    background-color: orange;
+    margin:0 auto;
+    border-radius:60px;
+ }
+ #life > .button > a { 
+    display: block;
+    width:200px; height:60px;
+    color:white; font-weight:bold; font-size: 1.5rem;
+    display:flex; justify-content: center; align-items: center;
+ }
+/* 공통 : 후원하기 영역 종료*/
+
+/* 공통 : 푸터 영역 시작*/
+#footer {
+    width:100%; height:300px;
+    background-color:#37413F;
+}
+#footer > .footerWrap {
+    width:1200px; height:300px;
+    margin:0 auto;
+    _background-color:red;
+    padding:20px 0px;
+}
+#footer > .footerWrap > .snsWrap {
+    display:flex; flex-wrap:wrap;
+    margin-bottom:10px;
+    width:320px; height:50px;
+}
+#footer > .footerWrap > .snsWrap > li > a {
+    display: block;
+    width:80px; height:50px;
+    
+}
+#footer > .footerWrap > .snsWrap > .sns_01 > a { 
+    background:url(../images/sns_01_g_40.png) no-repeat center; 
+    transition:0.3s;
+}
+#footer > .footerWrap > .snsWrap > .sns_02 > a { 
+    background:url(../images/sns_02_g_40.png) no-repeat center; 
+    transition:0.3s;
+}
+#footer > .footerWrap > .snsWrap > .sns_03 > a { 
+    background:url(../images/sns_03_g_40.png) no-repeat center; 
+    transition:0.3s;
+}
+#footer > .footerWrap > .snsWrap > .sns_04 > a { 
+    background:url(../images/sns_04_g_40.png) no-repeat center; 
+    transition:0.3s;
+}
+#footer > .footerWrap > .snsWrap > .sns_01 > a:hover { background:url(../images/sns_01_40.png) no-repeat center; }
+#footer > .footerWrap > .snsWrap > .sns_02 > a:hover { background:url(../images/sns_02_40.png) no-repeat center; }
+#footer > .footerWrap > .snsWrap > .sns_03 > a:hover { background:url(../images/sns_03_40.png) no-repeat center; }
+#footer > .footerWrap > .snsWrap > .sns_04 > a:hover { background:url(../images/sns_04_40.png) no-repeat center; }
+#footer > .footerWrap > div { display: flex; }
+#footer > .footerWrap > div >.logo > a { 
+    display: block;
+    width: 100px; height: 180px; 
+    background:url(../images/footer_logo.png) no-repeat left;
+}
+#footer > .footerWrap > div > address { 
+    width:650px; height:180px;
+    padding-top: 40px;
+}
+#footer > .footerWrap > div > address > p:nth-child(1) { 
+    font-style:initial;
+    color:#B7C5C2; font-weight:bold;
+    margin-bottom:20px;
+}
+#footer > .footerWrap > div > address > p:nth-child(2) { 
+    font-style:initial;
+    color:#919695;
+    font-size:12px; line-height:18px;
+}
+
+/* 공통 : 푸터 영역 종료*/
