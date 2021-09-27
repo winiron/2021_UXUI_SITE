@@ -412,30 +412,28 @@
 /* 모바일 : 후원하기 영역 종료 */
 
 /* 모바일 : 푸터 영역 시작*/
-    #footer { 
-        height: 340px;
-    }
-    #footer > .footerWrap {
-        width:100%; height:300px;
-        padding:20px 0px;
-    }
-    #footer > .footerWrap > .snsWrap {
-        display:flex; flex-wrap:wrap;
-        margin:0 auto;
-    }
-    #footer > .footerWrap > div { display:initial; width: 100%;}
-    #footer > .footerWrap > div >.logo > a { 
-        display: block;
-        width: 100px; height: 100px; 
-        background:url(../images/footer_logo.png) no-repeat center;
-        margin:0 auto;
-    }
-    #footer > .footerWrap > div > address { 
-        width:90%; height:180px;
-        padding-top:10px;
-        margin:0 auto;
-    }
-    #footer > .footerWrap > div > address > p { text-align: center; letter-spacing:-1px;}
+#footer { height:380px;  overflow: hidden;}
+#footer > .footerWrap {
+    width:100%; height:100%;
+    padding-top:20px; padding-bottom:20px;
+}
+#footer > .footerWrap > .snsWrap {
+    display:flex; flex-wrap:wrap;
+    margin:0 auto;
+}
+#footer > .footerWrap > div { display:initial; width: 100%; }
+#footer > .footerWrap > div >.logo > a { 
+    display:block;
+    width:140px; height:140px; 
+    background:url(../images/footer_logo.png) no-repeat center;
+    margin:0 auto;
+}
+#footer > .footerWrap > div > address {
+    width:90%; height:180px;
+    margin:0 auto;
+    padding-top:10px;
+}
+#footer > .footerWrap > div > address > p { text-align: center; letter-spacing:-1px; }
 /* 모바일 : 푸터 영역 종료*/
 
 }/* mobile media */

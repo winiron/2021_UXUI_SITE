@@ -297,7 +297,7 @@ html,body{ height: 100%; }
     width:1200px; height:300px;
     margin:0 auto;
     _background-color:red;
-    padding:20px 0px;
+    padding:50px 0px;
 }
 #footer > .footerWrap > .snsWrap {
     display:flex; flex-wrap:wrap;
@@ -349,5 +349,4 @@ html,body{ height: 100%; }
     color:#919695;
     font-size:12px; line-height:18px;
 }
-
 /* 공통 : 푸터 영역 종료*/
