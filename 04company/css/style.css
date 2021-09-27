@@ -143,10 +143,23 @@
 /* 데스크탑 : video(동영상) 영역 종료 */
 
 /* 데스크탑 : 후원하기 영역 시작 */
-#life {
-    background:url(../images/life_bg.png) no-repeat center;
-    background-size:cover;
-}
+    #life {
+        height:500px;
+        background:url(../images/life_bg.png) no-repeat center;
+        background-size:cover;
+    }
+    #life > .titleWrap { margin-bottom:40px; }
+    #life > .titleWrap > .subTitle { font-size:1.875rem;} 
+    #life > .titleWrap > .mainTitle { font-size:2rem;} 
+    #life > .sentence { margin-bottom:60px; }
+    #life > .button { 
+        width:200px; height:60px;
+        border-radius:60px;
+    }
+    #life > .button > a { 
+        width:200px; height:60px;
+        font-size:1.5rem;
+    }
 /* 데스크탑 : 후원하기 영역 종료 */
 
 } 
@@ -379,10 +392,23 @@
 /* 모바일 : 동영상 영역 종료*/
 
 /* 모바일 : 후원하기 영역 시작 */
-#life {
-    background:url(../images/life_mobile_bg.png) no-repeat center;
-    background-size:cover;
-}
+    #life {
+        height:400px;
+        background:url(../images/life_mobile_bg.png) no-repeat center;
+        background-size:cover;
+    }
+    #life > .titleWrap { margin-bottom:30px; }
+    #life > .titleWrap > .subTitle { font-size:1.4rem;} 
+    #life > .titleWrap > .mainTitle { font-size:1.6rem;} 
+    #life > .sentence { font-size:0.9rem; margin-bottom:40px; }
+    #life > .button { 
+        width:150px; height:50px;
+        border-radius:60px;
+    }
+    #life > .button > a { 
+        width:150px; height:50px;
+        font-size:1.2rem;
+    }
 /* 모바일 : 후원하기 영역 종료 */
 
 /* 모바일 : 푸터 영역 시작*/
