@@ -1,0 +1,131 @@
+@charset "UTF-8";
+
+/* 공통 영역 시작 */
+
+html,body{ height: 100%; }
+
+
+/* 공통 : 헤더 영역 작업 시작 */
+#headerTop > .logo > a { display:block; width:200px; height:100px; }
+/* 공통 : 헤더 영역 작업 종료 */
+
+/* 공통 : 배너 영역 작업 시작 */
+#banner {
+    background-size: cover;
+    display:flex; justify-content: center; align-items: center;
+}
+#banner.company { background:url(../images/company_banner.jpg) no-repeat center; }
+#banner.notice { background:url(../images/notice_banner.jpg) no-repeat center; }
+#banner.active { background:url(../images/active_banner.jpg) no-repeat center; }
+#banner.sponsor { background:url(../images/sponsor_banner.jpg) no-repeat center; }
+#banner.report { background:url(../images/report_banner.jpg) no-repeat center; }
+
+#banner > .txtWrap { display:flex; justify-content: center; align-items: center;}
+#banner > .txtWrap > .txt { text-align:center; }
+#banner > .txtWrap > .txt > .title { font-family:'Noto Serif KR',serif; color:white; font-weight:600; letter-spacing:1px; }
+#banner > .txtWrap > .txt > .sentence { color:white; }
+/* 공통 : 배너 영역 작업 종료 */
+
+/* 공통 : 탭 영역 작업 시작 */
+#tab > div.on { 
+    color:white !important;
+    background-color:#00a991;     
+}
+/* 공통 : 탭 영역 작업 종료 */
+
+/* 공통 : 콘텐츠 영역 작업 시작 */
+#container { margin-bottom:60px;}
+#container > div { width:100%; } 
+#container > div:first-child { display: block; }
+#container > div { display:none; }
+#container > div > .txtWrap { margin-bottom:60px; text-align: center; }
+#container > div > .txtWrap > .sentence { font-weight:300; }
+#container > div > .txtWrap > .sentence > span { color:#00a991;}
+/* 공통 : 콘텐츠 영역 작업 종료 */
+
+
+/* 공통 : 후원하기 영역 시작*/
+#life {
+    width:100%; 
+    padding:100px 0px;
+}
+#life > .titleWrap { font-family:'Noto Serif KR',serif; text-align:center; color:white; }
+#life > .titleWrap > .subTitle > span { color:orange; } 
+#life > .sentence {  
+    color:white; text-align:center;
+    margin-bottom:60px;
+}
+#life > .button { 
+    background-color:orange;
+    margin:0 auto;
+ }
+ #life > .button > a { 
+    display:block;
+    color:white; font-weight:bold;
+    display:flex; justify-content: center; align-items: center;
+ }
+/* 공통 : 후원하기 영역 종료*/
+
+/* 공통 : 푸터 영역 시작*/
+#footer {
+    width:100%; height:300px;
+    background-color:#37413F;
+}
+#footer > .footerWrap {
+    width:1200px; height:300px;
+    margin:0 auto;
+    _background-color:red;
+    padding:50px 0px;
+}
+#footer > .footerWrap > .snsWrap {
+    display:flex; flex-wrap:wrap;
+    margin-bottom:10px;
+    width:320px; height:50px;
+}
+#footer > .footerWrap > .snsWrap > li > a {
+    display: block;
+    width:80px; height:50px;
+    
+}
+#footer > .footerWrap > .snsWrap > .sns_01 > a { 
+    background:url(../images/sns_01_g_40.png) no-repeat center; 
+    transition:0.3s;
+}
+#footer > .footerWrap > .snsWrap > .sns_02 > a { 
+    background:url(../images/sns_02_g_40.png) no-repeat center; 
+    transition:0.3s;
+}
+#footer > .footerWrap > .snsWrap > .sns_03 > a { 
+    background:url(../images/sns_03_g_40.png) no-repeat center; 
+    transition:0.3s;
+}
+#footer > .footerWrap > .snsWrap > .sns_04 > a { 
+    background:url(../images/sns_04_g_40.png) no-repeat center; 
+    transition:0.3s;
+}
+#footer > .footerWrap > .snsWrap > .sns_01 > a:hover { background:url(../images/sns_01_40.png) no-repeat center; }
+#footer > .footerWrap > .snsWrap > .sns_02 > a:hover { background:url(../images/sns_02_40.png) no-repeat center; }
+#footer > .footerWrap > .snsWrap > .sns_03 > a:hover { background:url(../images/sns_03_40.png) no-repeat center; }
+#footer > .footerWrap > .snsWrap > .sns_04 > a:hover { background:url(../images/sns_04_40.png) no-repeat center; }
+#footer > .footerWrap > div { display: flex; }
+#footer > .footerWrap > div >.logo > a { 
+    display: block;
+    width: 100px; height: 180px; 
+    background:url(../images/footer_logo.png) no-repeat left;
+}
+#footer > .footerWrap > div > address { 
+    width:650px; height:180px;
+    padding-top: 40px;
+}
+#footer > .footerWrap > div > address > p:nth-child(1) { 
+    font-style:initial;
+    color:#B7C5C2; font-weight:bold;
+    margin-bottom:20px;
+}
+#footer > .footerWrap > div > address > p:nth-child(2) { 
+    font-style:initial;
+    color:#919695;
+    font-size:12px; line-height:18px;
+}
+
+/* 공통 : 푸터 영역 종료*/

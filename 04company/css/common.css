@@ -6,7 +6,9 @@ html,body{ height: 100%; }
 
 
 /* 공통 : 헤더 영역 작업 시작 */
-#headerTop > .logo > a { display:block; width:200px; height:100px; }
+#headerTop > .logo > a { 
+    display:block; width:200px; height:100px; 
+}
 
 
 /* 공통 : 헤더 > 슬라이더 영역 시작*/
@@ -268,22 +270,32 @@ html,body{ height: 100%; }
 
 /* 공통 : 후원하기 영역 시작*/
 #life {
-    width:100%; 
+    width:100%; height:500px;
     padding:100px 0px;
 }
-#life > .titleWrap { font-family:'Noto Serif KR',serif; text-align:center; color:white; }
+#life > .titleWrap { 
+    font-family:'Noto Serif KR',serif; text-align:center; color:white;
+    margin-bottom:60px;
+}
+#life > .titleWrap > .subTitle { font-size: 1.875rem;} 
 #life > .titleWrap > .subTitle > span { color:orange; } 
-#life > .sentence {  
-    color:white; text-align:center;
+#life > .titleWrap > .mainTitle { font-size: 2rem;} 
+
+#life > .sentence { 
+    text-align:center; 
+    color: white;
     margin-bottom:60px;
 }
 #life > .button { 
-    background-color:orange;
+    width:200px; height:60px;
+    background-color: orange;
     margin:0 auto;
+    border-radius:60px;
  }
  #life > .button > a { 
-    display:block;
-    color:white; font-weight:bold;
+    display: block;
+    width:200px; height:60px;
+    color:white; font-weight:bold; font-size: 1.5rem;
     display:flex; justify-content: center; align-items: center;
  }
 /* 공통 : 후원하기 영역 종료*/
@@ -297,7 +309,7 @@ html,body{ height: 100%; }
     width:1200px; height:300px;
     margin:0 auto;
     _background-color:red;
-    padding:50px 0px;
+    padding:20px 0px;
 }
 #footer > .footerWrap > .snsWrap {
     display:flex; flex-wrap:wrap;
@@ -349,4 +361,5 @@ html,body{ height: 100%; }
     color:#919695;
     font-size:12px; line-height:18px;
 }
+
 /* 공통 : 푸터 영역 종료*/
