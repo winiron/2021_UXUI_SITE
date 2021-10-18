@@ -1,0 +1,72 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap');
+
+*{
+    margin:0; padding:0;
+    box-sizing:border-box;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size:16px;
+    font-weight:400;
+}
+
+:root { /* ★ :root { } */
+    --primary-color1:#4455cc;
+    --primary-color2:#854fee;
+    --bg-color:#efefef;
+    --gradient-color:linear-gradient(90deg,#4455cc,#854fee);
+    --bax-shadow:0 0 15px rgba(0,0,0,0.5);
+}
+
+#header { transition:0.3s }
+/* 헤더 > 메뉴 영역 */
+#header .nav-item {
+    font-size:1.2rem;
+    border-bottom:4px solid transparent; /* ★ transparent */
+    padding:0 10px;
+    transition:0.3s;
+}
+#header .nav-item:hover {
+    border-bottom:4px solid var(--primary-color2);
+}
+#header.fixed-top {
+    box-shadow:0 0 20px rgba(0,0,0,0.3);
+    transition:0.3s;
+}
+
+/* 미디어 쿼리 이용 ⇨ 576 미만에서는 #header .nav-item 라인  삭제 */
+@media screen and (max-width:576px) {
+    #header .nav-item, 
+    #header .nav-item:hover{
+        border-bottom:0 none;
+    }    
+}
+
+/* 비주얼 영역 */
+#visual {
+    background:url(../assets/slider-bg.svg) no-repeat center bottom;
+}
+
+/* 콘텐츠 영역 */
+#content {
+    background: var(--bg-color);
+}
+
+#content .btn.button-primary {
+    background:var(--gradient-color);
+    box-shadow:var(--bax-shadow);
+    border:0 none;
+}
+
+/* 서비스 영역 */
+#service .card {
+    background: var(--bg-color);
+    border:0 none;
+    transition:0.3s;
+}
+#service .card:hover { 
+    box-shadow:var(--bax-shadow);
+    transform:scale(1.1);
+}
+#service .card img {
+    height:200px;
+}
