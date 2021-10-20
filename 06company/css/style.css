@@ -1,6 +1,9 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap');
 
+ul {padding:0;}
+
+li { list-style-type:none; }
 *{
     margin:0; padding:0;
     box-sizing:border-box;
@@ -70,3 +73,38 @@
 #service .card img {
     height:200px;
 }
+
+/* 포트폴리오 영역 */
+#portfolio {
+    background:var(--bg-color);
+}
+#portfolio .row img {
+    border-radius:10px;
+}
+#portfolio .button-group {
+   text-align:center;
+}
+
+
+
+/* 푸터 영역 */
+
+#footer .icon li+li {
+    margin-left:20px;
+}
+#footer .icon a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background:var(--bg-color);
+    text-align: center;
+    line-height:35px;
+    border-radius:20px;
+}
+#footer .icon a:hover {
+    box-shadow:var(--bax-shadow);
+}
+#footer .icon img {
+    width:15px;
+}
+
