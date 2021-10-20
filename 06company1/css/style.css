@@ -1,5 +1,11 @@
 @charset "UTF-8";
 
+:root {
+    --one-color:#02b3e4;
+    --two-color:#ff5483;
+    --three-color:#a951ed;
+}   
+
 #header {
     position:relative;
 }
@@ -51,4 +57,53 @@
     background-image:url(../images/left-arrow.svg);
     position: absolute; top:50%; left:0;
     transform:translateY(-50%);
+}
+
+/* 배너 영역 */
+#banner .card {
+    border:0 none;
+    border-radius:5px;
+    overflow:hidden;
+    box-shadow:10px 10px 25px rgba(0,0,0,0.4);
+    cursor:pointer;
+}
+#banner .card .card-img { 
+    position:relative;
+}
+#banner .card .card-img .mask {
+    background:rgba(3, 240, 228, 0.6);
+    position:absolute; top:0;
+    width:100%; height:100%;
+    transition:0.3s;
+}
+#banner .card:hover .card-img .mask {
+    opacity:0;
+}
+
+/* advantage 영역 */
+
+#advantage .icon {
+    width: 80px; height: 80px;
+    box-shadow:10px 10px 25px rgba(0,0,0,0.2);
+    border-radius:40px;
+}
+#advantage .title1st {
+    color:var(--one-color);
+}
+#advantage .img-view {
+    position: relative;
+    height: 400px;
+}
+#advantage .img-view img {
+    position: absolute;
+    border-radius:5px;
+    box-shadow:10px 10px 25px rgba(0,0,0,0.2);
+}
+#advantage .img-view .img-1st {
+    right: 0; top: 0;
+    width: 400px;
+}
+#advantage .img-view .img-2st {
+    left: 0; bottom: 0;
+    width: 300px;
 }
