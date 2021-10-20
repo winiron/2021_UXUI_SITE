@@ -1,10 +1,13 @@
 @charset "UTF-8";
 
+#header {
+    position:relative;
+}
 #header .bgColor {
     position:absolute;
     width:100%; height:600px;
     background:black;
-    background-image: linear-gradient(316deg, #02ccba 0%, #aa7ecd 100%);
+    background-image:linear-gradient(316deg, #02ccba 0%, #aa7ecd 100%);
     transform:skew(0,-15deg); /* 비틀기 */
     left:0; top:-260px; /* 위치 조정 */
 } 
@@ -18,4 +21,34 @@
 #header .video .txt {
     position:absolute; 
     bottom:10px; left:30px;
+}
+#header .card-view {
+    border-radius:5px;
+    overflow:hidden;
+    box-shadow:10px 10px 25px rgba(0,0,0,0.4);
+}
+
+/* 슬라이드 영역 */
+#slide .row {
+    position:relative;
+}
+#slide .row h4 {
+    font-weight:normal;
+    font-size:18px;
+}
+#slide .slide-title {
+    color:#7d97ad;
+    font-size:15px;
+}
+#slide .swiper-next {
+    width:20px; height:38px;
+    background-image:url(../images/right-arrow.svg);
+    position:absolute; top:50%; right:0;
+    transform:translateY(-50%);
+}
+#slide .swiper-prev {
+    width:20px; height:38px;
+    background-image:url(../images/left-arrow.svg);
+    position: absolute; top:50%; left:0;
+    transform:translateY(-50%);
 }
