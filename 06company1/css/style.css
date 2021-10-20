@@ -10,12 +10,11 @@
     position:relative;
 }
 #header .bgColor {
-    position:absolute;
-    width:100%; height:600px;
-    background:black;
+    position:absolute; left:0; top:-260px; /* 위치 조정 */
+    width:100%; height:600px; /* 크기 조정 */
     background-image:linear-gradient(316deg, #02ccba 0%, #aa7ecd 100%);
     transform:skew(0,-15deg); /* 비틀기 */
-    left:0; top:-260px; /* 위치 조정 */
+    
 } 
 
 #header .video video {
@@ -67,7 +66,7 @@
     box-shadow:10px 10px 25px rgba(0,0,0,0.4);
     cursor:pointer;
 }
-#banner .card .card-img { 
+#banner .card .card-img {   
     position:relative;
 }
 #banner .card .card-img .mask {
@@ -81,28 +80,47 @@
 }
 
 /* advantage 영역 */
+#advantage { position:relative; }
+#advantage .bgColor {
+    position: absolute;
+    width: 100%;height: 1000px;
+    background-image: linear-gradient(316deg, #02ccba 0%, #aa7ecd 100%);
+    transform:skew(0,10deg);
+    left:0;top:200px;
+}
+
 #advantage .icon {
-    width: 80px; height: 80px;
-    box-shadow:10px 10px 25px rgba(0,0,0,0.2);
+    width:80px; height:80px; /* 크기 */
     border-radius:40px;
+    box-shadow:10px 10px 25px rgba(0,0,0,0.2);
 }
-#advantage .title1st {
-    color:var(--one-color);
-}
+
+#advantage .title1 { color:var(--one-color); }
+#advantage .title2 { color:var(--two-color); }
+#advantage .title3 { color:var(--three-color); }
+
 #advantage .img-view {
-    position: relative;
-    height: 400px;
+    position:relative;
+    height:400px;
 }
 #advantage .img-view img {
-    position: absolute;
+    position:absolute;
     border-radius:5px;
     box-shadow:10px 10px 25px rgba(0,0,0,0.2);
 }
-#advantage .img-view .img-1st {
-    right: 0; top: 0;
-    width: 400px;
+
+#advantage .img-view .img-1st { width:400px; right:0; top:0; } 
+#advantage .img-view .img-2st { width:300px; left:0; bottom:0; }
+#advantage .img-view .img-3st { width:400px; right:0; top:0; }
+#advantage .img-view .img-4st { width:400px; left:10px; bottom:10px; }    
+#advantage .img-view .img-5st { width:400px; right:0; top:0; }
+#advantage .img-view .img-6st { width:300px; left:0; bottom:0; }  
+
+
+/* 문의사항 영역 */
+#contact {
+    background:url(../images/contact-cover.jpg) no-repeat center fixed;
+    background-size:cover;
 }
-#advantage .img-view .img-2st {
-    left: 0; bottom: 0;
-    width: 300px;
-}
+
+/* footer 영역 */
