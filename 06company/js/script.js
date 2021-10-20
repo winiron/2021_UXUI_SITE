@@ -27,10 +27,10 @@ window.onload = function(){
     $("#portfolio .btn-group #btn1").trigger("click");    
 };
 
-// light box = modal
+// light box ≒ modal
 $("#portfolio .row .popup_link").magnificPopup({type:"image"});
 
-//slider owl
+//slider : owl-carousel
 $("#customer .owl-carousel").owlCarousel({
     loop:true,
     margin:10,
