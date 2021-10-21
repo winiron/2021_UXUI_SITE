@@ -118,3 +118,29 @@
 }
 
 /* footer 영역 */
+
+
+
+/* subPage Company 영역 */
+#header .subBgColor {
+    position:absolute; left:0; top:0; /* 위치 조정 */
+    width:100%; height:100%; /* 크기 조정 */
+    background-image:linear-gradient(316deg, #02ccba 0%, #aa7ecd 100%);  
+}
+.subPage {
+    _height:300px;
+    background-color: dodgerblue;
+    position:relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+}
+.subPage.company { background-image:url(../images/contact-cover.jpg);}
+.subPage.catalog { background-image:url(../images/nano2.jpg); }
+.subPage.business { background-image:url(../images/nano2.jpg); }
+.subPage.commuity { background-image:url(../images/nano2.jpg); }
+
+/* subContent 영역 */
+#subContent {
+    position: relative;
+}
