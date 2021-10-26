@@ -1,0 +1,177 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap');
+
+*{
+    margin:0; padding:0;
+    box-sizing:border-box;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size:16px;
+    font-weight:400;
+}
+
+:root {
+    --primary-color1:#fcf7ef;
+    --second-color2:#b50760;
+    --text-color1 :#514d4d;
+    --bg-lightgray:lightgray;
+    --bg-orange:orange;
+    --bg-dodgerblue:dodgerblue;
+    --bg-red:red;
+    --bg-footer:#3e3832;
+}
+
+
+/* 헤더영역 */
+#header { background:var(--primary-color1); }
+#header.fixed-top { border-bottom:1px solid #c6b796; }
+#header li { border-bottom:4px solid transparent; }
+#header li:hover { border-bottom:4px solid var(--second-color2); }
+@media screen and (max-width:576px) {
+    #header li,
+    #header li:hover { border-bottom: none; }
+}
+#header li a {
+    color:#514d4d;
+    transition:0.3s;
+    font-size:1.2rem;
+}
+#header li.nav-item a:hover { color:var(--second-color2); }
+#header li.active a { color:var(--second-color2); }
+
+/* 배너 영역 */
+#banner {
+    background:var(--text-color1);
+    position: relative;
+}
+#banner > .txt {
+    position:absolute;
+    left:50%; top:50%;
+    transform:translate(-50%, -50%);
+    color:white;
+    z-index:10;
+    text-align: center;
+}
+#banner > .txt > h2 { font-size:4rem; }
+
+/* service 영역 */
+
+#service .title {
+     font-size:1.5rem;
+}
+#service .container .card { 
+    border:0 none;
+    border-radius:5px;
+    overflow:hidden;
+}
+#service .star img{
+    display: block;
+    margin:0 auto;
+}
+#service .line {
+    width: 30px; height: 4px;
+    background-color: #b50760;
+    margin:0 auto;
+}
+.cardBgColor {
+    background:var(--primary-color1);
+}
+.card-body img {
+    display:block;
+    margin:0 auto;
+}
+.title { 
+    font-size:1.2rem;
+    font-weight:600;
+    text-align: center;
+}
+.card-txt {
+    color:var(--text-color1);
+}
+.card-body .btn {
+    display:inline-block;
+    border:1px solid #e2d2d2;
+    transition:0.3s;
+}
+.card-body .btn:hover {
+    background:var(--second-color2);
+    border:1px solid var(--second-color2);
+    color:white;
+}
+
+#contentOne .row > div { height:300px; }
+#contentOne .contentL { background:var(--bg-orange); }
+
+#contentOne .contentL  {
+    background-image:url(../images/unsplash_FGH56SXso2o.png);
+    background-repeat:no-repeat;
+    background-size:cover;
+
+
+}
+
+
+
+
+#contentOne .contentR { background:var( --primary-color1); }
+
+
+
+
+#contentTwo .row > div { height:300px; }
+#contentTwo .contentTwoArea { background: var(--bg-dodgerblue); }
+#contentThree .row > div { height:300px; }
+#contentThree .contentL { background:var(--bg-red); }
+#contentThree .contentR { background:var(--primary-color1); }
+#contentFour .row > div { height:300px; }
+#contentFour .contentL { background:var(--primary-color1); }
+#contentFour .contentR { background:var(--bg-orange); }
+
+
+#icon .imgWrap1,
+#icon .imgWrap2, 
+#icon .imgWrap3 {
+    width:200px; height:200px;
+    background:var(--primary-color1);
+    border-radius:50%;
+    background-repeat:no-repeat;
+    background-position:center;
+    margin:0 auto;
+}
+#icon .imgWrap1 { background-image:url(../images/icon_ms4-1.png); }
+#icon .imgWrap2 { background-image:url(../images/icon_ms4-2.png); }
+#icon .imgWrap3 { background-image:url(../images/icon_ms4-3.png); }
+#icon .imgWrap img { display:block; }
+#icon p { font-size:1.125rem; }
+#icon .btn {
+    display:inline-block;
+    border:1px solid #e2d2d2;
+    transition:0.3s;
+}
+#icon .btn:hover {
+    background:var(--second-color2);
+    border:1px solid var(--second-color2);
+    color:white;
+}
+
+
+#footer {
+    background:var(--bg-footer);
+}
+#footer .local-menu a { color:var(--primary-color1); }
+#footer .logo a {
+    display:block;
+    width:182px; height:50px;
+    text-indent:-9999px;
+    background-image:url(../images/f_logo.png);
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:contain;
+}
+
+#footer address p {
+    color:var(--bg-lightgray);
+    font-size:0.9rem;
+    font-weight:400;
+    line-height:1.5rem;
+}

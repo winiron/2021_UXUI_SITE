@@ -10,47 +10,34 @@ const swiper = new Swiper('.swiper-container', {
   }
 });
 
+// scroll 이벤트 : scroll 값 구하기
+$(window).scroll(function(){
+    let scrollY = $(window).scrollTop(); // 자바스크립트 :window.pageYOffset
+    console.log(scrollY);
 
-//navBar 영역 
+    if(scrollY > 300 ) { // "scrollY"가 300 이상 일 경우 ⇨ ①
+        $(".navbar").addClass("fixed-top bg-dark px-lg-5"); // ① 클래스 삽입
+    } else {
+        $(".navbar").removeClass("fixed-top bg-dark px-lg-5"); // 클래스 삭제
+    }
+});
 
-let winWidth = 0; // 화면 너비 
-        
 
-// 리사이즈 함수 생성
+$(".navbar-toggler").click(function(){ // ①
+    $(".navbar").toggleClass("onView");
+});
+
+
+// 리사이즈 이벤트 
 $(window).resize(function(){
-    winSize(); // winSize() 함수 실행
+    let winWidth = $(window).width();
     console.log(winWidth);
-})
-
-// winSize() 함수 생성
-function winSize() {
-    winWidth = $(window).width(); // 화면 너비 산출
-    let onView = true; 
-    if(winWidth < 768){ // 화면 너비 768보다 작으면 
-        $(".navbar-toggler").click(function() {
-            if(onView == true){
-                $(".navbar").addClass("onView")
-                onView = false;
-            } else {
-                $(".navbar").removeClass("onView");
-                onView = true;
-            }
+    if (winWidth < 768) { // "winWidth"가 "768" 미만이면 ⇨ ① 실행
+        $(".navbar-toggler").click(function(){ // ①
+            $(".navbar").toggleClass("onView");
         });
-    }else{
+    } else {
         $(".navbar").removeClass("onView");
         $(".navbar-collapse").removeClass("show");
-    }
-}
-
-winSize();// winSize() 함수 실행
-
-//스크롤 함수 
-$(window).scroll(function() {
-    let scrollY = $(window).scrollTop();
-    console.log(scrollY)
-    if(scrollY > 100){
-        $(".navbar").addClass("fixed-top bg-dark px-lg-5")
-    }else {
-        $(".navbar").removeClass("fixed-top bg-dark px-lg-5")
     }
 });
