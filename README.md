@@ -6,3 +6,4 @@
 1. Company  https://winiron.github.io/2021_UXUI_SITE/05parallax
 1. Company  https://winiron.github.io/2021_UXUI_SITE/06company
 1. Company  https://winiron.github.io/2021_UXUI_SITE/06company1
+1. Bootstrap https://winiron.github.io/2021_UXUI_SITE/06company2
