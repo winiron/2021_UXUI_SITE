@@ -100,22 +100,22 @@
 }
 
 #contentOne .row > div { height:300px; }
-#contentOne .contentL { background:var(--bg-orange); }
-
-#contentOne .contentL  {
+#contentOne .contentL {
     background-image:url(../images/unsplash_FGH56SXso2o.png);
     background-repeat:no-repeat;
     background-size:cover;
-
-
 }
 
-
-
-
-#contentOne .contentR { background:var( --primary-color1); }
-
-
+#contentOne .contentR {  background:var( --primary-color1); }
+#contentOne .line {
+    width:25px; height:3px;
+    background:#b50760;
+}
+#contentOne .btn {
+    display:inline-block;
+    border:1px solid #e2d2d2;
+    transition:0.3s;
+}
 
 
 #contentTwo .row > div { height:300px; }
