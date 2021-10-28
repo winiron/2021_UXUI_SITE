@@ -39,6 +39,7 @@
 #header li.nav-item a:hover { color:var(--second-color2); }
 #header li.active a { color:var(--second-color2); }
 
+
 /* 배너 영역 */
 #banner {
     background:var(--text-color1);
@@ -54,50 +55,48 @@
 }
 #banner > .txt > h2 { font-size:4rem; }
 
-/* service 영역 */
 
-#service .title {
-     font-size:1.5rem;
+/* service 영역 */
+#service .title { 
+    font-size:1.2rem; 
+    font-weight:600;
+    text-align:center;
 }
 #service .container .card { 
     border:0 none;
     border-radius:5px;
     overflow:hidden;
 }
-#service .star img{
-    display: block;
-    margin:0 auto;
-}
-#service .line {
-    width: 30px; height: 4px;
-    background-color: #b50760;
-    margin:0 auto;
-}
-.cardBgColor {
-    background:var(--primary-color1);
-}
-.card-body img {
+#service .star img {
     display:block;
     margin:0 auto;
 }
-.title { 
-    font-size:1.2rem;
-    font-weight:600;
-    text-align: center;
+#service .line {
+    width:30px; height:4px;
+    background:var(--second-color2);
+    margin:0 auto;
 }
-.card-txt {
+#service .cardBgColor {
+    background:var(--primary-color1);
+}
+#service .card-body img {
+    display:block;
+    margin:0 auto;
+}
+#service .card-txt {
     color:var(--text-color1);
 }
-.card-body .btn {
+#service .card-body .btn {
     display:inline-block;
     border:1px solid #e2d2d2;
     transition:0.3s;
 }
-.card-body .btn:hover {
+#service .card-body .btn:hover {
     background:var(--second-color2);
     border:1px solid var(--second-color2);
     color:white;
 }
+
 
 #contentOne .row > div { height:300px; }
 #contentOne .contentL {
@@ -108,7 +107,7 @@
 
 #contentOne .contentR {  background:var( --primary-color1); }
 #contentOne .line {
-    width:25px; height:3px;
+    width:30px; height:4px;
     background:#b50760;
 }
 #contentOne .btn {
@@ -116,6 +115,21 @@
     border:1px solid #e2d2d2;
     transition:0.3s;
 }
+#contentOne .contentWrap > p {
+    color:var(--text-color1);
+}
+#contentOne .btn {
+    display:inline-block;
+    border:1px solid #e2d2d2;
+    transition:0.3s;
+}
+#contentOne .btn:hover {
+    background:var(--second-color2);
+    border:1px solid var(--second-color2);
+    color:white;
+}
+
+
 
 
 #contentTwo .row > div { height:300px; }
