@@ -129,14 +129,14 @@
     color:white;
 }
 
-
-
-
 #contentTwo .row > div { height:300px; }
-#contentTwo .contentTwoArea { background: var(--bg-dodgerblue); }
-#contentThree .row > div { height:300px; }
-#contentThree .contentL { background:var(--bg-red); }
-#contentThree .contentR { background:var(--primary-color1); }
+#contentTwo .contentL { background:var(--primary-color1); }
+#contentTwo .contentR { 
+    background-image:url(../images/content2.png);
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+
 #contentFour .row > div { height:300px; }
 #contentFour .contentL { background:var(--primary-color1); }
 #contentFour .contentR { background:var(--bg-orange); }
