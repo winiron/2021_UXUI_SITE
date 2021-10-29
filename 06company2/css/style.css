@@ -196,7 +196,10 @@
 
 #icon .imgWrap1,
 #icon .imgWrap2, 
-#icon .imgWrap3 {
+#icon .imgWrap3,
+#icon .imgWrap4,
+#icon .imgWrap5,
+#icon .imgWrap6 {
     width:200px; height:200px;
     background:var(--primary-color1);
     border-radius:50%;
@@ -207,6 +210,9 @@
 #icon .imgWrap1 { background-image:url(../images/icon_ms4-1.png); }
 #icon .imgWrap2 { background-image:url(../images/icon_ms4-2.png); }
 #icon .imgWrap3 { background-image:url(../images/icon_ms4-3.png); }
+#icon .imgWrap4 { background-image:url(../images/icon_ms4-4.png); }
+#icon .imgWrap5 { background-image:url(../images/icon_ms4-5.png); }
+#icon .imgWrap6 { background-image:url(../images/icon_ms4-6.png); }
 #icon .imgWrap img { display:block; }
 #icon p { font-size:1.125rem; }
 #icon .btn {
