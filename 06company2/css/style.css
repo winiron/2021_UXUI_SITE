@@ -34,7 +34,6 @@
 #header li a {
     color:#514d4d;
     transition:0.3s;
-    font-size:1.2rem;
 }
 #header li.nav-item a:hover { color:var(--second-color2); }
 #header li.active a { color:var(--second-color2); }
@@ -246,4 +245,9 @@
     font-size:0.9rem;
     font-weight:400;
     line-height:1.5rem;
+}
+
+.dropdown-menu {
+    top:140%;
+    background:var(--primary-color1);
 }
