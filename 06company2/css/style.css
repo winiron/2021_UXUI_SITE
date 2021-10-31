@@ -36,7 +36,12 @@
     transition:0.3s;
 }
 #header li.nav-item a:hover { color:var(--second-color2); }
-#header li.active a { color:var(--second-color2); }
+_#header li.active a { color:var(--second-color2); }
+
+.dropdown-menu a.dropdown-item {background-color:var(--primary-color1);}
+
+
+
 
 
 /* 배너 영역 */
@@ -251,4 +256,41 @@
 .dropdown-menu {
     top:140%;
     background:var(--primary-color1);
+}
+
+
+
+#sub_banner {
+    width:100%;
+    height:300px;
+    background-size:cover;
+    display:flex; justify-content:center; align-items:center;
+}
+#sub_banner.intro { background:url(../images/unsplash_ikGJw9SYUuM.png)no-repeat center; }
+#sub_banner.service { background:url(../images/service.png)no-repeat center; }
+#sub_banner.info { background:url(../images/info.jpg)no-repeat center; }
+#sub_banner.info { background:url(../images/info.jpg)no-repeat center; }
+#sub_banner.reservation { background:url(../images/reservation.jpg)no-repeat center; }
+#sub_banner.edu { background:url(../images/edu.png)no-repeat center; }
+#sub_banner .title {
+    color:white;
+    font-size:5rem;
+    font-weight:500;
+}   
+#sub_banner .link {
+    color:var(--primary-color1);
+    font-size:0.9rem;
+} 
+#sub_banner .link span {
+    color:#e6cb62;
+}
+#sub_content {
+    background:var(--primary-color1);
+}
+#sub_content.mobile { display:none; }
+
+
+@media screen and (max-width:768px){
+    #sub_content.pc { display: none;}
+    #sub_content.mobile {display:block;}
 }
