@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>fullPage + Bootstrap</title>
+        <link rel="stylesheet" href="css/fullpage.css">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+        <!-- swiper CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.0.9/swiper-bundle.css" integrity="sha512-WDdCafHbATE4+4590Fk0qPbO6O2MfG/60dN+MM8LmB00SeBmy9VWD0UN/qlZIrmCHGrewcdffueVXuuTcDo0Wg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- OwlCarousel CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+        <link rel="stylesheet" href="css/swiper_css.css">
+        <link rel="stylesheet" href="css/swiper_text.css">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/table.css">
+        <link rel="stylesheet" href="css/page3.css">
+    </head>
+
+    <body>
+<!-- header 작업 영역 -->
+        <header id="header">
+            <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+                <a class="navbar-brand" href="#step1"><img src="images/m_logo.png" alt=""></a>
+                <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav ml-auto mt-2 mt-lg-0" id="gnbMemu">
+                        <li class="nav-item">
+                            <a class="nav-link" data-menuanchor="step1" href="#step1">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"  data-menuanchor="step2" href="#step2">ABOUT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"  data-menuanchor="step3" href="#step3">체험여행</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"  data-menuanchor="step4" href="#step4">커뮤니티</a>
+                        </li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-2" type="text" placeholder="검색">
+                        <button class="btn btn-outline-warning my-2" type="submit">검색</button>
+                    </form>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Modal01 Start -->
+        <div class="modal fade modalStyle" id="myModal_01" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content Start-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">원모어트립 X 서울쇼핑페스타 연계 할인 프로모션</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            <span class="badge badge-danger spanNotice">NEW</span>
+                            <span class="badge badge-secondary spanNotice">공고</span> 
+                        </p>
+                        <p>
+                            안녕하세요. 원모어트립입니다.<br>
+                            원모어트립에서는 위드코로나에 대비하여 일상으로의 회복을 기원하며, 
+                            2021 원모어트립 공식 판매 플랫폼인 Frip(프렌트립) & 솜씨당과 할인 프로모션을 진행합니다. 
+                            서울 최대 쇼핑축제인 '서울쇼핑페스타'와 연계하여 10월 29일부터 11월 3일까지 '단 6일간'만 행사가 진행되니 잊지 않고 참여하셔서, 할인된 금액으로 체험을 즐기시길 바랍니다.
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div><!-- Modal content End -->
+            </div>
+        </div><!-- Modal01 End -->
+        <!-- Modal02 Start -->
+        <div class="modal fade modalStyle" id="myModal_02" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content Start-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">2021 서울 체험관광 영상 크리에이터 ‘투어테이너’ 4기 선정 결과 발표</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            <span class="badge badge-danger spanNotice">NEW</span>
+                            <span class="badge badge-warning spanNotice">공지</span>
+                        </p>
+                        <p>
+                            서울 체험관광 영상 크리에이터 '투어테이너'의 4기 모집 선정 결과를 다음과 같이 안내드립니다.<br>
+                            지원해주신 모든 분께 진심으로 감사의 말씀을 드리며, 앞으로 있을 저희 원모어트립과 투어테이너 활동에도 지속적인 관심을 부탁드립니다.<br>
+                            ※ 합격자 대상 향후 일정 및 세부사항 관련 개별 연락 예정입니다.<br>
+                            코로나 19로 인한 사회적 거리두기 4단계 격상에 따라 예정되어 있던 7월 12일 월요일 발대식이 취소되었음을 고지드립니다.<br>
+                            ○ 문의처: 02-2038-9911 / tourtainer2021@gmail.com
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div><!-- Modal content End -->
+            </div>
+        </div><!-- Modal02 End -->
+        <!-- Modal03 Start -->
+        <div class="modal fade modalStyle" id="myModal_03" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content Start-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">2021 투어테이너 모집</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            <span class="badge badge-info spanNotice">모집</span> 
+                        </p>
+                        <p>
+                            서울의 다양한 라이프스타일을 '영상'으로 담아낼 #서울 #대표 #영상 #크리에이터를 찾습니다!<br>
+                            서울관광재단에서는 서울 체험관광의 '진짜' 매력을 알리고 홍보할 '2021 투어테이너'를 모집합니다.<br>
+                            원모어트립과 함께 서울의 매력을 전 세계로 알릴 역량있는 분들의 많은 참여 바랍니다.<br>
+                            ○ 문의처: 2021 투어테이너 운영 공식 메일(tourtainer2021@gmail.com)<br>
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div><!-- Modal content End -->
+            </div>
+        </div><!-- Modal03 End -->  
+        <!-- Modal04 Start -->
+        <div class="modal fade modalStyle" id="myModal_04" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content Start-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">사회적 거리두기 2.5단계 강화에 따른 안내사항</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            <span class="badge badge-warning spanNotice">공지</span>
+                        </p>
+                        <p>
+                            안녕하세요? 원모어트립입니다.<br>
+                            2020년 12월 6일자로 서울시 사회적 거리두기가 2단계에서 2.5단계로 추가 격상되었습니다.<br>
+                            체험시설 방문 전에 운영상황을 확인하시고, 시설 이용시에는 사회적 거리두기 방역 조치에 따라 안전하게 이용하시길 바랍니다.<br>
+                            감사합니다.<br>
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div><!-- Modal content End -->
+            </div>
+        </div><!-- Modal04 End --> 
+        <!-- Modal05 Start -->
+        <div class="modal fade modalStyle" id="myModal_05" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content Start-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">네온사인 인테리어 소품 원데이클래스</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            <span class="badge badge-success spanNotice">행사</span>
+                        </p>
+                        <img src="images/board_05.jpg" alt="네온사인 인테리어 소품 원데이클래스" class="img-fluid">
+                        <p>
+                            상품 소개<br>
+                            다채로운 네온사인으로 개취저격 인테리어 소품을 만들어보세요!<br>
+                            이 체험을 통해 당신은···<br>
+                            - 다양한 색상과 굵기의 네온선을 이용해 하나뿐인 네온사인을 만들 수 있습니다.<br>
+                            - 원하는 문구나 로고, 그림 등으로 네온사인을 직접 디자인할 수 있습니다.<br>
+                            - 조명 전문가에게 네온사인 공예를 배울 수 있습니다.<br>
+                            - 특별한 의미를 담아 지인에게 선물할 수 있습니다.<br>
+                            - 상징적인 인테리어 소품으로 내 방을 감각적으로 꾸밀 수 있습니다.
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div><!-- Modal content End -->
+            </div>
+        </div><!-- Modal05 End --> 
+        
+        <!-- experence Modal01 Start -->
+        <div class="modal fade modalStyle" id="myModal_ex_01" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content Start-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">먹고! 마시고! 즐기자! 쿠킹박스 서울여행</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <iframe width="100%" height="300" src="https://www.youtube.com/embed/HwSCkFCvnj0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <p>
+                            <span class="badge badge-danger spanNotice">new</span>
+                            <span class="badge badge-warning spanNotice">food</span>
+                        </p>
+                        <h5>상품 소개</h5> 
+                        <p class="fontSize">전통주와 어우러지는 주안상을 만들어 보세요!</p> 
+                        <h5>이 체험을 통해 당신은···</h5>
+                        <p class="fontSize">
+                            다양한 전통주의 맛과 향을 즐길 수 있습니다.<br>
+                            요리 전문가와 함께 몸에 좋고 맛도 좋은 계절 요리를 만들 수 있습니다. <br>
+                        </p>
+                        <hr>
+                        <p class="fontSize">
+                            체험위치 : 서울시 동대문구 제기동<br>
+                            운영시간 : 수, 목 (15:00) 소요시간 : 2시간<br>
+                            제공언어 : 영어, 중국어, 한국어<br>
+                            가격 : <span class="price">100,000 KRW</span>
+                        </p>
+                        <hr>
+                        <p class="fontSize">쿠킹 클래스 | HP 010-0000-0000 TEL : 02-1111-1111</p>
+                        <hr>
+                        <button type="button" class="btn bg-primary text-white">예약하기</button>
+                        <button class="btn bg-danger text-white">비대면 보기</button>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div><!-- Modal content End -->
+            </div>
+        </div><!-- experence Modal01 end  -->        
+        <!-- experence Modal02 Start -->
+        <div class="modal fade modalStyle" id="myModal_ex_02" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content Start-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">요리하는 짝꿍(짝꿍 쿠킹클래스)</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <iframe width="100%" height="300" src="https://www.youtube.com/embed/nh6APIY69Q8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <p>
+                            <span class="badge badge-danger spanNotice">new</span>
+                            <span class="badge badge-warning spanNotice">food</span>
+                        </p>
+                        <h5>상품 소개</h5> 
+                        <p class="fontSize">연인, 친구, 부부등 두명이 한팀이 되어 즐겁게 요리해 보세요!</p> 
+                        <h5>이 체험을 통해 당신은···</h5>
+                        <p class="fontSize">
+                            친구, 연인과 함께 쉽고 재밌게 요리를 배울 수 있습니다.<br>
+                            호스트가 직접 제작한 만능 양념장, 베이직/프리미엄 키트 등을 구매할 수 있습니다.<br>
+                        </p>
+                        <hr>
+                        <p class="fontSize">
+                            체험위치 : 서울시 서대문구 신촌<br>
+                            운영시간 : 월 ~ 일 (09:00 - 21:00)<br>
+                            제공언어 : 한국어<br>
+                            가격 : <span class="price">90,000 KRW</span>
+                        </p>
+                        <hr>
+                        <p class="fontSize">쿠킹 클래스 | HP 010-0000-0000 TEL : 02-1111-1111</p>
+                        <hr>
+                        <button type="button" class="btn bg-primary text-white">예약하기</button>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div><!-- Modal content End -->
+            </div>
+        </div><!-- experence Modal02 end  -->     
+        <!-- experence Modal03 Start -->
+        <div class="modal fade modalStyle" id="myModal_ex_03" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content Start-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">여행e체질 : 구로를 발견하는 9가지 방법</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="images/experience_03_sum.jpg" alt="여행e체질 : 구로를 발견하는 9가지 방법" class="img-fluid">
+                        <p>
+                            <span class="badge badge-success spanNotice">history</span>
+                        </p>
+                        <h5>상품 소개</h5> 
+                        <p>서울 속 시간의 지층을 발견하는 구로여행</p> 
+                        <h5>이 체험을 통해 당신은···</h5>
+                        <p class="fontSize">
+                            타임머신을 타고 1960년 서울로 떠날 수 있습니다.<br>
+                            서울 차이나타운 가리봉동에서 새로운 경험을 할 수 있습니다.<br>
+                        </p>
+                        <hr>
+                        <p class="fontSize">
+                            체험위치 : 서울시 구로구 구로동<br>
+                            운영시간 : 월요일 ~ 토요일 (10:00~18:00)<br>
+                            소요시간 : 2시간 30분<br>
+                            제공언어 : 한국어<br>
+                            가격 : <span class="price">30,000 KRW</span>
+                        </p>
+                        <hr>
+                        <p class="fontSize">구로길 | HP 010-0000-0000 TEL : 02-1111-1111</p>
+                        <hr>
+                        <button type="button" class="btn bg-primary text-white">예약하기</button>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div><!-- Modal content End -->
+            </div>
+        </div><!-- experence Modal03 end  -->   
+        <!-- experence Modal04 Start -->
+        <div class="modal fade modalStyle" id="myModal_ex_04" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content Start-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">한국 전통 문양의 떡 비누(Traditional Korean tteok pattern Soap) 만들기</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <iframe width="100%" height="300" src="https://www.youtube.com/embed/X12Ys-KZl1c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <p>
+                            <span class="badge badge-primary spanNotice">entertainment</span>
+                        </p>
+                            <h5>상품 소개</h5> 
+                            <p>향긋한 한국 전통 문양의 떡 비누를 만들어 보세요!</p> 
+                            <h5>이 체험을 통해 당신은···</h5>
+                            <p class="fontSize">
+                                좋은 일이 생기면 떡을 돌리는 전통처럼 떡 비누를 선물할 수 있습니다.<br>
+                                아로마에센셜 오일로 비누를 만들며 힐링할 수 있습니다.<br>
+                            </p>
+                            <hr>
+                            <p class="fontSize">
+                                체험위치 : 서울시 송파구 문정동<br>
+                                운영시간 : 월~금 (10:30~15:00) /토(11:00~18:00) 소요시간 : 2시간<br>
+                                제공언어 : 한국어<br>
+                                가격 : <span class="price">35,000 KRW</span>
+                            </p>
+                            <hr>
+                            <p class="fontSize">한림예고 | HP 010-0000-0000 TEL : 02-1111-1111</p>
+                            <hr>
+                            <button type="button" class="btn bg-primary text-white">예약하기</button>
+                            <button class="btn bg-danger text-white">비대면 보기</button>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div><!-- Modal content End -->
+            </div>
+        </div><!-- experence Modal04 end  -->   
+        <!-- experence Modal05 Start -->
+        <div class="modal fade modalStyle" id="myModal_ex_05" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content Start-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">위라이드 서울 1인 모빌리티 투어 공공자전거, 전기자전거, 브롬튼 자전거, 전동인력거</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <iframe width="100%" height="300" src="https://www.youtube.com/embed/ByHeyojZQy8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <p>
+                            <span class="badge badge-secondary spanNotice">sport</span>
+                        </p>
+                        <h5>상품 소개</h5> 
+                        <p>현지인 가이드와 함께 자전거를 타고 서울 곳곳을 여행해보세요!</p> 
+                        <h5>이 체험을 통해 당신은···</h5>
+                        <p class="fontSize">
+                            고급 브롬튼 자전거와 전기 자전거로 쉽고 즐겁게 투어를 할 수 있습니다.<br>
+                            광화문-동대문 코스, 홍대-연남동-한강 코스 등을 통해 서울의 관광 명소들을 만날 수 있습니다.<br>
+                        </p>
+                        <hr>
+                        <p class="fontSize">
+                            체험위치 : 시청 ~ 명동<br>
+                            운영시간 : 화 ~ 일 (09:30 ~ 18:00)<br>
+                            소요시간 : 2시간 30분<br>
+                            제공언어 : 영어, 한국어<br>
+                            가격 : <span class="price">52,000 KRW</span>
+                        </p>
+                        <hr>
+                        <p class="fontSize">자전거여행 | HP 010-0000-0000 TEL : 02-1111-1111</p>
+                        <hr>
+                        <button type="button" class="btn bg-primary text-white">예약하기</button>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div><!-- Modal content End -->
+            </div>
+        </div><!-- experence Modal05 end  --> 
+        <!-- experence Modal06 Start -->
+        <div class="modal fade modalStyle" id="myModal_ex_06" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content Start-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">평범하지 않은 나만의 유니크한 액세서리 만들기</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <iframe width="100%" height="300" src="https://www.youtube.com/embed/IdAt5vmWa7M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <p>
+                            <span class="badge badge-info spanNotice">culture</span>
+                        </p>
+                        <h5>상품 소개</h5> 
+                        <p>나만의 유니크한 생각을 디자인하고, 나만의 액세서리를 만들어 보세요!</p> 
+                        <h5>이 체험을 통해 당신은···</h5>
+                        <p class="fontSize">
+                            보편적인 디자인이 아닌, 낫플랫만의 레이어드 디자인을 만들 수 있습니다.<br>
+                            유쾌한 사장님과의 수다를 통해 즐겁게 만들 수 있습니다.<br>
+                        </p>
+                        <hr>
+                        <p class="fontSize">
+                            체험위치 : 서울시 마포구 상수동<br>
+                            운영시간 : 월 ~ 금 (09:30 ~ 18:00)<br>
+                            소요시간 : 2시간 30분<br>
+                            제공언어 : 영어, 한국어<br>
+                            가격 : <span class="price">55,000 KRW</span>
+                        </p>
+                        <hr>
+                        <p class="fontSize">상수동 공방 | HP 010-0000-0000 TEL : 02-1111-1111</p>
+                        <hr>
+                        <button type="button" class="btn bg-primary text-white">예약하기</button>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div><!-- Modal content End -->
+            </div>
+        </div><!-- experence Modal06 end  --> 
+        <!-- experence Modal07 Start -->
+        <div class="modal fade modalStyle" id="myModal_ex_07" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content Start-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">만들고 마시고 즐기는 수제 맥주 원 데이 클래스</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <iframe width="100%" height="300" src="https://www.youtube.com/embed/XugVxtedbe0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <p>
+                            <span class="badge badge-dark spanNotice">non-face</span>
+                            <span class="badge badge-warning spanNotice">food</span>
+                        </p>
+                        <h5>상품 소개</h5> 
+                        <p>내 취향에 맞는 수제 맥주를 직접 만들어 보세요!</p> 
+                        <h5>이 체험을 통해 당신은···</h5>
+                        <p class="fontSize">
+                            나에게 딱 맞는 맥주를 만들 수 있습니다.<br>
+                            다양한 맥주를 맛볼 수 있습니다.<br>
+                        </p>
+                        <hr>
+                        <p class="fontSize">
+                            난이도 : 초급<br>
+                            배송비 : 국내배송비 포함<br>
+                            설명서 : 영상 설명서 제공<br>
+                            설명서 언어 : 한국어<br>
+                            가격 : <span class="price">150,000 KRW</span>
+                        </p>
+                        <hr>
+                        <p class="fontSize">맥주 공방 | HP 010-0000-0000 TEL : 02-1111-1111</p>
+                        <hr>
+                        <button type="button" class="btn bg-primary text-white">예약하기</button>
+                        <button type="button" class="btn bg-primary text-white">대면 체험 보기</button>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div><!-- Modal content End -->
+            </div>
+        </div><!-- experence Modal07 end  --> 
+        <!-- experence Modal08 Start -->
+        <div class="modal fade modalStyle" id="myModal_ex_08" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content Start-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">겉바속촉 버터밀크 스콘 2종 만들기</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <iframe width="100%" height="300" src="https://www.youtube.com/embed/1ZgwdXvWMmc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <p>
+                            <span class="badge badge-warning spanNotice">food</span>
+                        </p>
+                        <h5>상품 소개</h5> 
+                        <p>겉은 바삭, 속은 촉촉한 버터밀크 스콘을 만들어 보세요!</p> 
+                        <h5>이 체험을 통해 당신은···</h5>
+                        <p class="fontSize">
+                            생크림이 들어간 겉은 바삭, 속은 촉촉한 스콘을 만들 수 있습니다.<br>
+                            달걀이 들어간 딱딱한 스콘이 아닌, 식어도 부드러운 식감의 버터밀크 스콘을 맛볼 수 있습니다.<br>
+                        </p>
+                        <hr>
+                        <p class="fontSize">
+                            체험위치 : 서울시 마포구 망원동<br>
+                            운영시간 : 월 ~ 금 (09:30 ~ 18:00)<br>
+                            소요시간 : 1시간 50분<br>
+                            제공언어 : 영어, 한국어<br>
+                            가격 : <span class="price">39,000 KRW</span>
+                        </p>
+                        <hr>
+                        <p class="fontSize">베이킹 클라스 | HP 010-0000-0000 TEL : 02-1111-1111</p>
+                        <hr>
+                        <button type="button" class="btn bg-primary text-white">예약하기</button>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div><!-- Modal content End -->
+            </div>
+        </div><!-- experence Modal08 end  --> 
+
+
+
+             
+<!-- fullPage 작업 영역  -->
+        <div id="fullpage">
+            <div class="section page1" data-anchor="step1">
+                <div class="swiper mySwiper swiper-initialized swiper-horizontal swiper-pointer-events">
+                    <div class="swiper-wrapper" id="swiper-wrapper-4c75f17be5623aa1" aria-live="off" style="transition-duration: 0ms; transform: translate3d(-7800px, 0px, 0px);">
+                      <div class="swiper-slide" role="group" aria-label="1 / 4" style="width:100vw; height:100vh; margin-right: 30px;"><img src="images/slide_01.jpg" alt=""></div>
+                      <div class="swiper-slide" role="group" aria-label="2 / 4" style="width:100vw; height:100vh; margin-right: 30px;"><img src="images/slide_02.jpg" alt=""></div>
+                      <div class="swiper-slide" role="group" aria-label="3 / 4" style="width:100vw; height:100vh; margin-right: 30px;"><img src="images/slide_03.jpg" alt=""></div>
+                      <div class="swiper-slide" role="group" aria-label="4 / 4" style="width:100vw; height:100vh; margin-right: 30px;"><img src="images/slide_04.jpg" alt=""></div>
+                    </div>
+        
+                    <div class="swiper-button-next pr-5" tabindex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-4c75f17be5623aa1" aria-disabled="false"></div>
+                    <div class="swiper-button-prev pl-5" tabindex="0" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-4c75f17be5623aa1" aria-disabled="false"></div>
+                    <!-- <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal"><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 1"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 3"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 4"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 5"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 6"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 7"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 8"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 9"></span></div> -->
+                    <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                </div>
+                <div class="swiper_txt">
+                    <h2>ONE MORE TRIP</h2>
+                    <p>서울을 여행하는 새로운 방법, <span class="spanColorOrange">원모어트립</span> 에서 만나보세요.<br>지금까지 경험해보지 못한 <span class="spanColorOrange">색다른 체험</span>이 일상과 여행에 특별함을 더합니다.</p>
+                    <p>Meet at <span class="spanColorOrange">One More Trip</span>, a new way to travel to Seoul.<br><span class="spanColorOrange">Different experiences</span> that have never been experienced so far add to the speciality of daily life and travel.</p>
+                </div>
+            </div>
+            <div class="section page2 " data-anchor="step2">
+                <div class="container">
+                    <div class="titleWrap mb-3">
+                        <h3 class="title">원모어트립(ONE MORE TRIP)이란?</h3>
+                        <p>Introduction of ONE MORE TRIP</p>
+                    </div>
+                    <div class="img mb-3"><img src="images/bg2.jpg" alt="" class="img-fluid"></div>
+                    <P>
+                        서울관광재단이 운영하는 원모어트립( www.onemoretrip.net )은<br> 웹과 SNS를 통해 서울의 다양한 체험관광 상품 및 영상콘텐츠를 한 곳에서 쉽게 찾아보고 구매할 수 있도록 정보를 제공하는<br> '서울시 공식 체험관광 콘텐츠 포털사이트'입니다. 
+                    </P>
+                    <p>
+                        One More Trip (www.onemoretrip.net), run by the Seoul Tourism Foundation, is a "Seoul City's official experience tourism content portal site" that provides information so that you can easily find and purchase various experience tourism products and video contents in Seoul through the web and SNS.
+                    </p>
+                </div>
+            </div>
+
+            <!-- 체험 영역 START -->
+            <div class="section page3" data-anchor="step3">
+                    <div class="experience">
+                        .<div class="container">
+                            <div class="titleWrap mb-5">
+                                <h3 class="title text-white">체험 여행</h3>
+                                <p class="text-white">Experience trip</p>
+                            </div>
+                            <div class="owl-carousel owl-theme">
+                                <div class="item">
+                                    <div class="card">
+                                        <div class="card-img">
+                                            <img src="images/experience_01.jpg" alt="" class="img-fluid w-100">
+                                            <div class="mask"></div>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="sign mb-2">
+                                                <span class="badge badge-danger spanNotice">new</span>
+                                                <span class="badge badge-warning spanNotice">food</span>
+                                            </div>
+                                            <p class="card-title">먹고! 마시고! 즐기자! 쿠킹박스 서울여행</p>
+                                            <a data-toggle="modal" href="#myModal_ex_01" class="btn btn-warning">more</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="card">
+                                        <div class="card-img">
+                                            <img src="images/experience_02.jpg" alt="" class="img-fluid w-100">
+                                            <div class="mask"></div>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="sign mb-2">
+                                                <span class="badge badge-danger spanNotice">new</span>
+                                                <span class="badge badge-warning spanNotice">food</span>
+                                            </div>
+                                            <p class="card-title">요리하는 짝꿍(짝꿍 쿠킹클래스)</p>
+                                            <a data-toggle="modal" href="#myModal_ex_02" class="btn btn-warning">more</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="card">
+                                        <div class="card-img">
+                                            <img src="images/experience_03.jpg" alt="" class="img-fluid w-100">
+                                            <div class="mask"></div>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="sign mb-2">
+                                                <span class="badge badge-success spanNotice">history</span>
+                                            </div>
+                                            <p class="card-title">여행e체질 : 구로를 발견하는 9가지 방법</p>
+                                            <a data-toggle="modal" href="#myModal_ex_03" class="btn btn-warning">more</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="card">
+                                        <div class="card-img">
+                                            <img src="images/experience_04.jpg" alt="" class="img-fluid w-100">
+                                            <div class="mask"></div>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="sign mb-2">
+                                                <span class="badge badge-primary spanNotice">entertainment</span>
+                                            </div>
+                                            <p class="card-title">한국 전통 문양의 떡 비누(Traditional Korean tteok pattern Soap) 만들기</p>
+                                            <a data-toggle="modal" href="#myModal_ex_04" class="btn btn-warning">more</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="card">
+                                        <div class="card-img">
+                                            <img src="images/experience_05.jpg" alt="" class="img-fluid w-100">
+                                            <div class="mask"></div>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="sign mb-2">
+                                                <span class="badge badge-secondary spanNotice">sport</span>
+                                            </div>
+                                            <p class="card-title">위라이드 서울 1인 모빌리티 투어 공공자전거, 전기자전거, 브롬튼 자전거, 전동인력거</p>
+                                            <a data-toggle="modal" href="#myModal_ex_05" class="btn btn-warning">more</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="card">
+                                        <div class="card-img">
+                                            <img src="images/experience_06.jpg" alt="" class="img-fluid w-100">
+                                            <div class="mask"></div>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="sign mb-2">
+                                                <span class="badge badge-info spanNotice">culture</span>
+                                            </div>
+                                            <p class="card-title">평범하지 않은 나만의 유니크한 액세서리 만들기</p>
+                                            <a data-toggle="modal" href="#myModal_ex_06" class="btn btn-warning">more</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="card">
+                                        <div class="card-img">
+                                            <img src="images/experience_07.jpg" alt="" class="img-fluid w-100">
+                                            <div class="mask"></div>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="sign mb-2">
+                                                <span class="badge badge-dark spanNotice">non-face</span>
+                                                <span class="badge badge-warning spanNotice">food</span>
+                                            </div>
+                                            <p class="card-title">만들고 마시고 즐기는 수제 맥주 원 데이 클래스</p>
+                                            <a data-toggle="modal" href="#myModal_ex_07" class="btn btn-warning">more</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="card">
+                                        <div class="card-img">
+                                            <img src="images/experience_08.jpg" alt="" class="img-fluid w-100">
+                                            <div class="mask"></div>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="sign mb-2">
+                                                <span class="badge badge-warning spanNotice">food</span>
+                                            </div>
+                                            <p class="card-title">겉바속촉 버터밀크 스콘 2종 만들기</p>
+                                            <a data-toggle="modal" href="#myModal_ex_08" class="btn btn-warning">more</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <!-- 체험 영역 END -->
+
+            <div class="section page4" data-anchor="step4">
+                <div class="container">
+                    <div class="titleWrap mb-3">
+                        <h3 class="title">커뮤니티</h3>
+                        <p>ONE MORE TRIP Community</p>
+                    </div>
+                    <!--table start-->
+                    <table class="table mb-5">
+                        <colgroup>
+                            <col width="10%">
+                            <col width="60%">
+                            <col width="25%">
+                            <col width="15%">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <td>NO</td>
+                                <td>TITLE</td>
+                                <td>DATE</td>
+                                <td>HIT</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>05</td>
+                                <td class="subject">
+                                    <span class="badge badge-danger spanNotice">NEW</span>
+                                    <span class="badge badge-secondary spanNotice">공고</span> 
+                                    <a data-toggle="modal" href="#myModal_01">원모어트립 X 서울쇼핑페스타 연계 할인 프로모션</a>
+                                </td>
+                                <td>2021-11-02</td>
+                                <td>12</td>
+                            </tr>
+                            <tr>
+                                <td>04</td>
+                                <td class="subject">
+                                    <span class="badge badge-danger spanNotice">NEW</span>
+                                    <span class="badge badge-warning spanNotice">공지</span>
+                                    <a data-toggle="modal" href="#myModal_02"> 2021 서울 체험관광 영상 크리에이터 ‘투어테이너’ 4기 선정 결과 발표</a>
+                                </td>
+                                <td>2021-11-01</td>
+                                <td>45</td>
+                            </tr>
+                            <tr>
+                                <td>03</td>
+                                <td class="subject">
+                                    <span class="badge badge-info spanNotice">모집</span> 
+                                    <a data-toggle="modal" href="#myModal_03"> 2021 투어테이너 모집</a>
+                                <td>2021-10-15</td>
+                                <td>130</td>
+                            </tr>
+                            <tr>
+                                <td>02</td>
+                                <td class="subject">
+                                    <span class="badge badge-warning spanNotice">공지</span>
+                                    <a data-toggle="modal" href="#myModal_04"> 사회적 거리두기 2단계 강화에 따른 안내사항</a>
+                                <td>2020-06-12</td>
+                                <td>200</td>
+                            </tr>
+                            <tr>
+                                <td>01</td>
+                                <td class="subject">
+                                    <span class="badge badge-success spanNotice">행사</span>
+                                    <a data-toggle="modal" href="#myModal_05"> 네온사인 인테리어 소품 원데이클래스</a>
+                                <td>2020-05-05</td>
+                                <td>300</td>
+                            </tr>
+                        </tbody>
+                    </table><!--table end-->
+                    <!--navigation start-->
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Previous">
+                                    <span aria-hidden="true">&laquo;</span>
+                                </a>
+                            </li>
+                            <li class="page-item active"><a class="page-link" href="#">1<span class="sr-only">(current)</span></a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Next">
+                                    <span aria-hidden="true">&raquo;</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav><!--navigation end-->          
+                </div>
+            </div>
+            <div class="section fp-auto-height">
+                <div class="myContent mb-5">
+                    <div id="footer" class="intro">
+                        <div class="localMenuWrap mb-5">
+                            <div class="localMenu">
+                                <div class="left">
+                                    <a href="#">이용약관</a>
+                                </div>
+                                <div class="right">
+                                    <a href="#">개인정보처리방침</a>
+                                </div>
+                            </div>
+                        </div>
+                        <address>
+                            (03190)서울특별시 종로구 청계천로 85 (31빌딩) 6층 대표이사 길기연<br>
+                            사업자등록번호 : 245-82-00220 E-mail onemoretrip.official@gmail.com<br>
+                        </address>
+                        <p>© SEOUL TOURISM ORGANIZATION. ALL RIGHTS RESERVED.</p>
+                        <h1 class="fLogo">logo</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- javaScript WorkArea -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="js/jquery.fullPage.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+        <!-- swiper CDN -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.0.9/swiper-bundle.min.js" integrity="sha512-bPNHwutl0bNsjHtw+AtR2xvp0BLtpm9mN6LcqzDZifcQSYv/dPVvND245WZVst+m7GhYHX647RoaL9w6VVraxw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <!-- isotope CDN -->
+        <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+        <!-- Owl Carouse CDN -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <script src="js/fullPageScript.js"></script>
+        <script src="js/swiperScript.js"></script>
+        <script src="js/owlCaroiselScript.js"></script>
+    </body>
+</html>

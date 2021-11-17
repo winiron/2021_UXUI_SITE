@@ -1,0 +1,83 @@
+@charset "UTF-8";
+
+.section {
+    height:100%;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    text-align:center;
+}
+
+.section.page1 { position: relative; } /* slider */
+
+.section.page3 { background-image:url(../images/bg3.jpg); }
+.section.page2 { padding-top:50px; }
+.section.page2 .img { 
+    display:block;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+.section .title { font-size:2rem; }
+
+.btn-group .btn { color:white; border:none; }
+
+
+
+#footer .localMenuWrap {
+    width:100%;
+    height:40px;
+    background:orangered;
+    position:relative;
+}
+#footer .localMenuWrap .localMenu {
+    width:auto;
+    height:100%;
+    padding-right:0;
+    margin:0 auto;
+    display:flex;
+    position:absolute; left:50%; transform:translateX(-50%);
+}
+#footer .localMenuWrap .localMenu  div a {
+    display:block;
+    line-height:40px;
+    color:white;
+    font-size:0.9rem;
+    transition:0.3s;
+}
+#footer .localMenuWrap .localMenu div a:hover {
+    font-weight:500;
+}
+#footer .localMenuWrap .localMenu .left > a { padding-right:20px; }
+#footer .localMenuWrap .localMenu .right > a { padding-left:20px; }
+#footer address {
+    text-align: center;
+    font-size:0.8rem;
+}
+#footer.intro > p { 
+    font-size:0.7rem; 
+    margin-bottom:2rem;
+}
+#footer  h1.fLogo {
+    text-indent:-9999px;
+    background-image:url(../images/footer_logo.jpg);
+    background-position:center;
+    background-repeat:no-repeat;
+}
+
+
+.price {
+    font-weight:bold;
+    font-size:1.2rem;
+}
+p.fontSize {
+    font-size:0.9rem;
+}
+
+@media screen and (max-width:765px) {
+    .scrollBtn { display:none; }
+    .section.page2 .leftBox {
+        height:100vh; background-color: black;
+    }
+}

@@ -279,7 +279,7 @@ _#header li.active a { color:var(--second-color2); }
 }   
 #sub_banner .link {
     color:var(--primary-color1);
-    font-size:0.9Rem;
+    font-size:0.9rem;
 } 
 #sub_banner .link span {
     color:#e6cb62;

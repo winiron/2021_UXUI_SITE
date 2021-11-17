@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+.experience .card {
+    border:0 none;
+    border-radius:10px;
+    overflow: hidden;
+    box-shadow:10px 10px 25px rgba(0,0,0,0.4);
+    cursor: pointer;
+}
+
+.experience .card .card-img { position:relative; }
+.experience .card .mask {
+    position:absolute;
+    width:100%; height:100%;
+    top:0;
+    background:rgba(0, 0, 0, 0.6);
+    transition:0.3s;
+}
+.experience .card:hover .mask {
+    background:rgba(0, 0, 0, 0);
+}
+.experience .card .card-body .sign {
+    text-align: left;
+} 
+
+.card-title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow:ellipsis;
+}
